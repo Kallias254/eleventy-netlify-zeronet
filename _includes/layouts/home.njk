@@ -1,6 +1,13 @@
----
-layout: layouts/base.njk
-section: home
----
+{% extends "layouts/base.njk" %}
 
-{{ layoutContent | safe }}
+{% block header %}
+    {% include "components/header/home-header.njk" %}
+{% endblock %}
+
+{% block content %}
+    {{ content | safe }}
+{% endblock %}
+
+{% block footer %}
+    {% include "components/footer/home-footer.njk" %}
+{% endblock %}

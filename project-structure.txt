@@ -1,0 +1,35 @@
+_includes/
+├── layouts/
+│   ├── base.njk
+│   ├── home.njk
+│   └── inner-page.njk
+├── components/
+│   ├── footer-components.njk
+│   └── footer.njk
+├── assets/
+│   ├── css
+│   ├── images
+│   └── js
+└── partials/
+    └── common-scripts.njk
+├── _data/
+│   ├── footer-data/
+│   │   ├── gallery.json
+│   │   ├── navigation.json
+│   │   ├── social-media.json.json
+│   │   └── inner-footer.njk
+│   ├── metadata.json
+│   ├── site.json
+│   └── navigation.json
+├── admin/
+│   ├── config.yml
+│   └── index.html
+├── pages/
+│   ├── home.md
+│   ├── about.md
+│   ├── services.md
+│   ├── strategy.md
+│   └── contact.md
+├── _site/
+├── .eleventy.js
+└── package.json

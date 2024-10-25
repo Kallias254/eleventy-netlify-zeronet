@@ -1,6 +1,73 @@
-<footer>
-  <small>
-    Created by <a href="https://danurbanowicz.com">Dan Urbanowicz</a>.
-    Check out the <a href="{{ pkg.repository.url }}">GitHub project</a>. Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a>
-  </small>
-</footer>
+{# _includes/components/footer.njk #}
+
+<div class="rts-footer-one footer-bg-one">
+  <div class="container">
+    <div class="row g-0 bg-cta-footer-one">
+      <div class="col-lg-12">
+        <div class="bg-cta-footer-one wrapper">
+          <div class="row align-items-center">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <a href="#" class="logo-area-footer">
+                <img src="/assets/images/logo/logo-02.png" alt="logo">
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="single-cta-area">
+                <div class="icon"></div>
+                <div class="contact-info">
+                  <span>Phone Number</span>
+                  <a href="tel:+4733378901">(+202) 2156-2145</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="single-cta-area">
+                <div class="icon"></div>
+                <div class="contact-info">
+                  <span>Email Us Here</span>
+                  <a href="mailto:info@diyer.com">info@diyer.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="single-cta-area last">
+                <div class="icon"></div>
+                <div class="contact-info">
+                  <span>Office Address</span>
+                  <a href="https://www.google.com/maps" target="_blank">251 Hilton, Berlin DE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt--90 pb--85 pb_sm--40">
+      <div class="col-lg-12">
+        <div class="single-footer-one-wrapper">
+          <!-- Footer Components -->
+          {% include "components/footer-components.njk" %}
+        </div>
+      </div>
+    </div>
+
+    <div class="row pb--20 pt--20 border-top-copyright">
+      <div class="col-lg-12">
+        <div class="copyright-area-one text-center">
+          <div class="left">
+&copy; Copyright {{ "2023" | year }}. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-one-left-right-image">
+    <img src="/assets/images/footer/08.png" alt="footer" class="one">
+    <img src="/assets/images/footer/09.png" alt="footer" class="two">
+  </div>
+</div>

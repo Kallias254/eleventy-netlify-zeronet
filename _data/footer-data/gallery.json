@@ -1,0 +1,34 @@
+{
+  "gallery": [
+    {
+      "thumbnail": "/assets/images/footer/gallery/01.png",
+      "url": "#",
+      "alt": "Solar Installation"
+    },
+    {
+      "thumbnail": "/assets/images/footer/gallery/02.png",
+      "url": "#",
+      "alt": "Wind Energy"
+    },
+    {
+      "thumbnail": "/assets/images/footer/gallery/03.png",
+      "url": "#",
+      "alt": "Solar Panel"
+    },
+    {
+      "thumbnail": "/assets/images/footer/gallery/04.png",
+      "url": "#",
+      "alt": "Maintenance"
+    },
+    {
+      "thumbnail": "/assets/images/footer/gallery/05.png",
+      "url": "#",
+      "alt": "Installation"
+    },
+    {
+      "thumbnail": "/assets/images/footer/gallery/06.png",
+      "url": "#",
+      "alt": "Service"
+    }
+  ]
+}

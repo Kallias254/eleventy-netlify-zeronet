@@ -1,0 +1,46 @@
+{
+  "useful_links": [
+    {
+      "text": "About Us",
+      "url": "/about"
+    },
+    {
+      "text": "Project Gallery",
+      "url": "/project-gallery"
+    },
+    {
+      "text": "Our Services",
+      "url": "/services"
+    },
+    {
+      "text": "Our Team",
+      "url": "/team"
+    },
+    {
+      "text": "Contact Us",
+      "url": "/contact"
+    }
+  ],
+  "what_we_do": [
+    {
+      "text": "Our Service",
+      "url": "/service"
+    },
+    {
+      "text": "Solar Panel",
+      "url": "/services/solar-panel"
+    },
+    {
+      "text": "Turbines Services",
+      "url": "/services/turbines"
+    },
+    {
+      "text": "Hydropower Plants",
+      "url": "/services/hydropower"
+    },
+    {
+      "text": "Fossil Resources",
+      "url": "/services/fossil"
+    }
+  ]
+}

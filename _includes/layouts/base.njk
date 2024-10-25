@@ -1,23 +1,52 @@
-<!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<!DOCTYPE html>
+<html lang="en" {% if section %} data-current="{{ section }}"{% endif %}>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	{% include "components/head.njk" %}
+    <!-- Meta Tags -->
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ metaDescription or metadata.description }}">
 
-	<body>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/fav.png">
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
-		</header>
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/assets/css/plugins/fontawesome-6.css">
+    <link rel="stylesheet" href="/assets/css/plugins/swiper.css">
+    <link rel="stylesheet" href="/assets/css/plugins/unicons.css">
+    <link rel="stylesheet" href="/assets/css/plugins/metismenu.css">
+    <link rel="stylesheet" href="/assets/css/vendor/animate.css">
 
-		<main>
-			{{ layoutContent | safe }}
-		</main>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
 
-		{% include "components/footer.njk" %}
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Header Area -->
+    {% include "components/header.njk" %}
 
-	</body>
+    <!-- Main Content -->
+    <main>
+        {{ content | safe }}
+    </main>
 
+    <!-- Footer Area -->
+    {% include "components/footer.njk" %}
+
+    <!-- All JS Files -->
+    <!-- jQuery -->
+    <script src="/assets/js/vendor/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/assets/js/vendor/bootstrap.min.js"></script>
+    <!-- Plugins -->
+    <script src="/assets/js/plugins/swiper.js"></script>
+    <script src="/assets/js/plugins/metismenu.js"></script>
+    <script src="/assets/js/plugins/wow.js"></script>
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
+</body>
 </html>

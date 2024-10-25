@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "About Us",
+      "url": "/about"
+    },
+    {
+      "text": "Services",
+      "url": "/services"
+    },
+    {
+      "text": "Strategy",
+      "url": "/strategy"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact"
+    }
+  ]
+}

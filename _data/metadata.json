@@ -1,5 +1,16 @@
 {
-  "title": "Eleventy Netlify Boilerplate",
-  "description": "A template for building a simple blog website with the Eleventy static site generator, Decap CMS, and with deployment to Netlify.",
-  "url": "https://eleventy-netlify-boilerplate.netlify.app"
+  "title": "ZERONET Clean Energy",
+  "description": "Powering a Sustainable Future in Sub-Saharan Africa through innovative renewable energy solutions.",
+  "url": "https://zeronet.netlify.app",
+  "author": {
+    "name": "ZeroNet Clean Energy",
+    "email": "info@zeronetcleanenergy.com"
+  },
+  "defaultSocialImage": "/assets/images/default-social.jpg",
+  "contact": {
+    "developer": {
+      "name": "Joseph Miseda",
+      "email": "misedajoseph@gmail.com"
+    }
+  }
 }
