@@ -77,14 +77,25 @@ module.exports = function (eleventyConfig) {
     require("./_data/footer-data/gallery.json").gallery,
   );
 
-  // Static Asset Handling
+  // Update the asset handling to ensure correct paths
   eleventyConfig.addPassthroughCopy({
-    "_includes/assets/css": "assets/css",
-    "_includes/assets/js": "assets/js",
+    "_includes/assets/css/vendor/bootstrap.bundle.min.js":
+      "assets/js/vendor/bootstrap.bundle.min.js",
+    "_includes/assets/css/vendor/bootstrap.min.css":
+      "assets/css/vendor/bootstrap.min.css",
+    "_includes/assets/css/plugins": "assets/css/plugins",
+    "_includes/assets/js/plugins": "assets/js/plugins",
+    "_includes/assets/js/vendor": "assets/js/vendor",
+    "_includes/assets/js/main.js": "assets/js/main.js",
+    "_includes/assets/css": "assets/css", //add all css routes like the js ones
     "_includes/assets/images": "assets/images",
+    "_includes/assets/fonts": "assets/fonts",
     "static/img": "img",
     admin: "admin",
   });
+
+  // Add specific watch targets for the assets
+  eleventyConfig.addWatchTarget("./_includes/assets/");
 
   // Add Date filter
   eleventyConfig.addFilter("year", function () {
@@ -92,8 +103,8 @@ module.exports = function (eleventyConfig) {
   });
 
   // Watch Targets
-  eleventyConfig.addWatchTarget("./_includes/assets/css/");
-  eleventyConfig.addWatchTarget("./_includes/assets/js/");
+  // eleventyConfig.addWatchTarget("./_includes/assets/css/");
+  // eleventyConfig.addWatchTarget("./_includes/assets/js/");
 
   // Markdown Library Setup
   let markdownIt = require("markdown-it");
