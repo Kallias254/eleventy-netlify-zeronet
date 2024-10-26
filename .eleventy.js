@@ -87,7 +87,7 @@ module.exports = function (eleventyConfig) {
     "_includes/assets/js/plugins": "assets/js/plugins",
     "_includes/assets/js/vendor": "assets/js/vendor",
     "_includes/assets/js/main.js": "assets/js/main.js",
-    "_includes/assets/css": "assets/css", //add all css routes like the js ones
+    "_includes/assets/css": "assets/css", //TODO: add all css routes like the js ones
     "_includes/assets/images": "assets/images",
     "_includes/assets/fonts": "assets/fonts",
     "static/img": "img",
