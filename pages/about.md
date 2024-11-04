@@ -9,4 +9,3 @@ eleventyNavigation:
   key: About
   order: 1
 ---
-{% include "components/pages/about/index.njk" %}
