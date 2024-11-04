@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
+
 </head>
 <body class="index-two onepage">
+
     <!-- Header Area -->
     {% include "components/header.njk" %}
 
@@ -28,6 +30,36 @@
     <main>
         {{ content | safe }}
     </main>
+
+    <!-- Progress Wrap -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
+    </div>
+
+    <!-- Loader -->
+    <div id="elevate-load">
+        <div class="loader-wrapper">
+            <div class="lds-ellipsis">
+                <div></div><div></div><div></div><div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Input -->
+    <div class="search-input-area">
+        <div class="container">
+            <div class="search-input-inner">
+                <div class="input-div">
+                    <!-- Search form content -->
+                </div>
+            </div>
+        </div>
+        <div id="close" class="search-close-icon"></div>
+    </div>
+
+    <div id="anywhere-home"></div>
 
     <!-- Footer Area -->
     {% include "components/footer.njk" %}
@@ -49,5 +81,6 @@
     <script src="/assets/js/plugins/bootstrap.min.js"></script>
     <!-- Main JS -->
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/custom.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
   <div class="body">
     <p>{{ site.companyDescription }}</p>
     <div class="rts-social-style-one">
-      {% for social in site.socialMedia %}
+      {% for social in social-media.socialMedia %}
       <a href="{{ social.url }}" aria-label="{{ social.platform }}">
         <i class="fab fa-{{ social.icon }}"></i>
       </a>
@@ -52,7 +52,7 @@
   </div>
   <div class="body">
     <div class="gallery-footer">
-      {% for image in gallery.footer %}
+      {% for image in gallery.gallery.gallery %}
       <a href="{{ image.url }}">
         <img src="{{ image.thumbnail }}" alt="{{ image.alt }}">
       </a>

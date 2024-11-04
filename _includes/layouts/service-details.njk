@@ -1,0 +1,148 @@
+---
+layout: layouts/page.njk
+section: "service-details"
+---
+<!-- rts service details area start -->
+<div class="rts-service-details-area rts-section-gap">
+    <div class="container">
+        <div class="row g-40">
+            <div class="col-lg-8">
+                <div class="left-service-details-wrapper">
+                    <div class="thumbnail-large">
+                        {% if featured_image %}
+                            <img src="{{ featured_image }}" alt="{{ title }}">
+                        {% endif %}
+                    </div>
+                    <div class="content--sd-top reveal">
+                        <h3 class="title title-g">{{ title }}</h3>
+                        <p class="disc-1">{{ mainContent.paragraph1 }}</p>
+                        <p class="disc-2">{{ mainContent.paragraph2 }}</p>
+                    </div>
+
+                    <div class="row g-5 align-items-center reveal">
+                        <div class="col-lg-6">
+                            <div class="sm-thumbnail-sd">
+                                {% if benefits_image %}
+                                    <img src="{{ benefits_image }}" alt="service">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="sm-sd-content-wrapper col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb_md--20 mb_sm--20">
+                            <h4 class="title title-g">Customer Benefits</h4>
+                            <p class="disc">{{ benefits.description }}</p>
+                            {% for item in benefits.items %}
+                            <div class="single-banifits">
+                                <i class="far fa-check-circle"></i>
+                                <span>{{ item }}</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    {% if steps %}
+                    <div class="service-detials-step-2 mt--50 reveal">
+                        <h4 class="title title-g">3 Simple Steps to Process</h4>
+                        <p class="disc mb--25">{{ steps.description }}</p>
+                        <div class="row mb--40 g-5 mb_md--20 mb_sm--20">
+                            {% for step in steps.items %}
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="single-service-step text-center">
+                                    <p class="step">0{{ loop.index }}</p>
+                                    <h6 class="title">STEP {{ loop.index }}</h6>
+                                    <p class="disc">{{ step }}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div>
+                            <p class="disc-1">{{ mainContent.paragraph3 }}</p>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-12 col-sm-12 col-12">
+                <!-- Search Widget -->
+                <div class="rts-single-wized search">
+                    <div class="wized-body mt--0">
+                        <div class="rts-search-wrapper">
+                            <input class="Search" type="text" placeholder="Enter Keyword">
+                            <button><i class="fal fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Widget -->
+                <div class="rts-single-wized Categories">
+                    <div class="wized-header">
+                        <h5 class="title text-start mt--0">Our Services</h5>
+                    </div>
+                    <div class="wized-body">
+                        {% for service in collections.services %}
+                        <ul class="single-categories">
+                            <li><a href="{{ service.url }}">{{ service.data.title }} <i class="far fa-long-arrow-right"></i></a></li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Contact Widget -->
+                {% if contact %}
+                <div class="rts-single-wized">
+                    <div class="card-cta">
+                        <div class="thumbnail">
+                            {% if contact.image %}
+                                <img src="{{ contact.image }}" alt="contact">
+                            {% endif %}
+                        </div>
+                        <h5 class="title">{{ contact.phone }}</h5>
+                        <p class="opc mt--20">{{ contact.hours }}</p>
+                        <p class="opc mb--20">{{ contact.availability }}</p>
+                        <a href="tel:{{ contact.phone }}" class="rts-btn btn-primary">Call us Now</a>
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Get in Touch Widget -->
+                {% if contact_info %}
+                <div class="rts-single-wized">
+                    <div class="wized-header">
+                        <h5 class="title text-start mt--0">Get in Touch</h5>
+                    </div>
+                    <div class="get-in-touch-single-side">
+                        {% if contact_info.email %}
+                        <div class="rts-single--cta">
+                            <i class="fa-sharp fa-light fa-envelope"></i>
+                            <a href="mailto:{{ contact_info.email }}">{{ contact_info.email }}</a>
+                        </div>
+                        {% endif %}
+
+                        {% if contact_info.phone %}
+                        <div class="rts-single--cta">
+                            <i class="fa-regular fa-phone"></i>
+                            <a href="tel:{{ contact_info.phone }}">{{ contact_info.phone }}</a>
+                        </div>
+                        {% endif %}
+
+                        {% if contact_info.address %}
+                        <div class="rts-single--cta">
+                            <i class="fa-regular fa-location-dot"></i>
+                            <a href="#">{{ contact_info.address }}</a>
+                        </div>
+                        {% endif %}
+
+                        {% if contact_info.hours %}
+                        <div class="rts-single--cta">
+                            <i class="fa-sharp fa-solid fa-timer"></i>
+                            <a href="#">{{ contact_info.hours }}</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- rts service details area end -->

@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
 
   // Layout Aliases
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
-  eleventyConfig.addLayoutAlias("page", "layouts/inner-page.njk");
+  eleventyConfig.addLayoutAlias("page", "layouts/page.njk");
   eleventyConfig.addLayoutAlias("home", "layouts/home.njk");
 
   // Date Filters
@@ -37,6 +37,10 @@ module.exports = function (eleventyConfig) {
     return minified.code;
   });
 
+  eleventyConfig.addFilter("split", function (str, separator) {
+    return str.split(separator);
+  });
+
   // HTML Minification Transform
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
@@ -53,10 +57,6 @@ module.exports = function (eleventyConfig) {
   // Custom Collections
   eleventyConfig.addCollection("services", (collection) => {
     return collection.getFilteredByGlob("services/*.md");
-  });
-
-  eleventyConfig.addCollection("team", (collection) => {
-    return collection.getFilteredByGlob("team/*.md");
   });
 
   // Add data files

@@ -2,7 +2,7 @@ _includes/
 ├── layouts/
 │   ├── base.njk
 │   ├── home.njk
-│   └── inner-page.njk
+│   └── page.njk
 ├── components/
 │   ├── footer-components.njk
 │   └── footer.njk

@@ -45,8 +45,9 @@
 /* Default  */
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 :root {
-  --color-primary: #4AAB3D;
+  --color-primary: #24823d;
   --color-primary-2: #ff7029;
   --color-secondary: #1F1F25;
   --color-body: #6E777D;
@@ -80,7 +81,7 @@
   --s-extra-bold: 800;
   --s-black: 900;
   --transition: 0.3s;
-  --font-primary: "Exo", sans-serif;
+  --font-primary: "Poppins", sans-serif;
   --font-secondary: "Albert Sans", sans-serif;
   --font-size-b1: 16px;
   --font-size-b2: 16px;
@@ -184,7 +185,7 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Exo", sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.4074;
   color: var(--color-heading-1);
 }
@@ -431,11 +432,11 @@ cite,
 }
 
 var {
-  font-family: "Exo", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*---------------------------
-	List Style 
+	List Style
 ---------------------------*/
 ul,
 ol {
@@ -626,7 +627,7 @@ ol ul {
 }
 
 /*=========================
-    Section Separation 
+    Section Separation
 ==========================*/
 .slick-dotted.slick-slider {
   margin-bottom: 0;
@@ -9872,7 +9873,7 @@ iframe {
 }
 
 /*===============================
-    Background Color 
+    Background Color
 =================================*/
 .bg-color-primary {
   background: var(--color-primary);
@@ -9903,7 +9904,7 @@ iframe {
 }
 
 /*===========================
-Background Image 
+Background Image
 =============================*/
 .bg_image {
   background-repeat: no-repeat;
@@ -10577,7 +10578,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*=============================
-	Overlay styles 
+	Overlay styles
 ==============================*/
 [data-overlay],
 [data-black-overlay],
@@ -10681,7 +10682,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*------------------------------
-    Scroll Up 
+    Scroll Up
 --------------------------------*/
 #scrollUp {
   width: 70px;
@@ -14111,9 +14112,9 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xclip 
+xclip
 
 -------------------------------- */
 .cd-headline.clip span {
@@ -15904,10 +15905,10 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 
 .index-two .rts-btn.btn-primary {
-  border-radius: 4px;
+  border-radius: 40px;
 }
 .index-two .rts-btn.btn-primary::before {
-  border-radius: 4px;
+  border-radius: 40px;
 }
 
 .button-circle-text {
@@ -18247,7 +18248,7 @@ nav ul li a {
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
-  font-family: "Exo", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   margin-top: 7px;
   margin-bottom: 8px;
@@ -19552,7 +19553,7 @@ nav ul li a {
 .counter-main-wrapper-h4 .single-counter-up .title {
   color: #1f1f25;
   font-size: 34px;
-  font-family: Exo;
+  font-family: Poppins;
   font-weight: 600;
   line-height: 44px;
   margin-bottom: -10px;
