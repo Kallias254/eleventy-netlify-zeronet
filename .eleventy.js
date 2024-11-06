@@ -43,6 +43,11 @@ module.exports = function (eleventyConfig) {
     return str.split(separator);
   });
 
+  // Add leading zero filter
+  eleventyConfig.addFilter("leadingZero", function (value) {
+    return value < 10 ? `0${value}` : value;
+  });
+
   // HTML Minification Transform
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {

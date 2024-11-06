@@ -1,0 +1,40 @@
+<!-- rts easy step area start -->
+<div class="rts-easy-step-area rts-section-gapBottom reveal">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-area-center title-g">
+                    <p class="pre skew-up">
+                        <span>{{ sectionSteps.preTitle }}</span> {{ sectionSteps.preHighlight }}
+                    </p>
+                    <h2 class="title skew-up">
+                        {{ sectionSteps.title }}
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt--10 g-24">
+            {% for step in sectionSteps.steps %}
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12{% if loop.index == 2 or loop.index == 4 %} mt--70{% endif %}">
+                <!-- single working steps area -->
+                <div class="rts-single-working-process">
+                    <div class="icon">
+                        <img src="/assets/images/icons/{{ step.icon }}.png" alt="{{ step.title }}">
+                    </div>
+                    <div class="content">
+                        <h5 class="title">{{ step.title }}</h5>
+                        <p class="disc">
+                            {{ step.description }}
+                        </p>
+                        <div class="step_number">
+                            <span>{{ step.number }}</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- single working steps area end -->
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- rts easy step area end -->

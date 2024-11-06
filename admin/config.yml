@@ -23,7 +23,12 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Author", name: "author", widget: "string", default: "Anonymous" }
+      - {
+          label: "Author",
+          name: "author",
+          widget: "string",
+          default: "Anonymous",
+        }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -44,3 +49,202 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "team_settings"
+    label: "Team Section Settings"
+    files:
+      - name: "team"
+        label: "Team Configuration"
+        file: "_data/team.json"
+        description: "Team section configuration and member details"
+        fields:
+          - label: "Pre-Title"
+            name: "preTitle"
+            widget: "object"
+            fields:
+              - { label: "Prefix", name: "prefix", widget: "string" }
+              - { label: "Main Text", name: "main", widget: "string" }
+          - { label: "Section Title", name: "title", widget: "string" }
+          - label: "Team Members"
+            name: "members"
+            widget: "list"
+            allow_add: true
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - {
+                  label: "Profile Image",
+                  name: "image",
+                  widget: "image",
+                  media_folder: "assets/images/team",
+                }
+              - {
+                  label: "Details Page URL",
+                  name: "detailsUrl",
+                  widget: "string",
+                  default: "team-details.html",
+                }
+              - label: "Social Media Links"
+                name: "socialLinks"
+                widget: "list"
+                fields:
+                  - {
+                      label: "Platform",
+                      name: "platform",
+                      widget: "select",
+                      options:
+                        [
+                          "facebook-f",
+                          "twitter",
+                          "linkedin",
+                          "instagram",
+                          "skype",
+                        ],
+                    }
+                  - { label: "Profile URL", name: "url", widget: "string" }
+
+  - name: "team_pages"
+    label: "Team Pages"
+    folder: "team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "layouts/page.njk",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Featured Image",
+          name: "featuredImage",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - label: "Team Section Settings"
+        name: "teamSection"
+        widget: "object"
+        fields:
+          - label: "Pre-Title"
+            name: "preTitle"
+            widget: "object"
+            fields:
+              - { label: "Prefix", name: "prefix", widget: "string" }
+              - { label: "Main Text", name: "main", widget: "string" }
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "SEO Description",
+              name: "metaDescription",
+              widget: "text",
+              required: false,
+            }
+  - name: "services"
+    label: "Services"
+    folder: "services"
+    create: true
+    slug: "{{slug}}" # This will automatically create a URL-friendly slug from the title
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "layouts/page.njk",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - {
+          label: "Thumbnail",
+          name: "thumbnail",
+          widget: "image",
+          media_folder: "/assets/images/project",
+        }
+      - label: "Shapes"
+        name: "shapes"
+        widget: "object"
+        fields:
+          - {
+              label: "Top Shape",
+              name: "top",
+              widget: "image",
+              media_folder: "/assets/images/project/shape",
+              default: "/assets/images/project/shape/01.png",
+            }
+          - {
+              label: "Bottom Shape",
+              name: "bottom",
+              widget: "image",
+              media_folder: "/assets/images/project/shape",
+              default: "/assets/images/project/shape/02.png",
+            }
+      - { label: "Meta Description", name: "metaDescription", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Section",
+          name: "section",
+          widget: "hidden",
+          default: "services",
+        }
+      - {
+          label: "Page Type",
+          name: "pageType",
+          widget: "hidden",
+          default: "service-detail",
+        }
+      - {
+          label: "Permalink",
+          name: "permalink",
+          widget: "hidden",
+          default: "/services/{{slug}}/",
+        }
+
+  - name: "services_settings"
+    label: "Services Page Settings"
+    files:
+      - name: "services"
+        label: "Services Page Configuration"
+        file: "_data/services.json"
+        fields:
+          - { label: "Page Title", name: "pageTitle", widget: "string" }
+          - label: "Breadcrumb"
+            name: "breadcrumb"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Background Class",
+                  name: "background",
+                  widget: "string",
+                  default: "bg-breadcrumb",
+                }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - {
+                  label: "Thumbnail",
+                  name: "thumbnail",
+                  widget: "image",
+                  media_folder: "/assets/images/project",
+                }
+              - label: "Shapes"
+                name: "shapes"
+                widget: "object"
+                fields:
+                  - {
+                      label: "Top Shape",
+                      name: "top",
+                      widget: "image",
+                      media_folder: "/assets/images/project/shape",
+                      default: "/assets/images/project/shape/01.png",
+                    }
+                  - {
+                      label: "Bottom Shape",
+                      name: "bottom",
+                      widget: "image",
+                      media_folder: "/assets/images/project/shape",
+                      default: "/assets/images/project/shape/02.png",
+                    }

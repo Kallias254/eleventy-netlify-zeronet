@@ -4,6 +4,7 @@ title: "Project Development"
 description: "End-to-end renewable energy project development and implementation services."
 featured_image: "/assets/images/service/09.jpg"
 benefits_image: "/assets/images/service/10.jpg"
+permalink: /services/project-development/
 eleventyNavigation:
   parent: Services
   title: Project Development

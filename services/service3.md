@@ -4,6 +4,7 @@ title: "EPC Services"
 description: "Engineering, Procurement, and Construction services for renewable energy projects."
 featured_image: "/assets/images/service/05.jpg"
 benefits_image: "/assets/images/service/06.jpg"
+permalink: /services/epc-services/
 eleventyNavigation:
   parent: Services
   title: EPC Services

@@ -2,8 +2,9 @@
 layout: layouts/service-details.njk
 title: "E-mobility and E-charging"
 description: "Comprehensive electric vehicle charging infrastructure and mobility solutions."
-featured_image: "/assets/images/service/13.jpg"
-benefits_image: "/assets/images/service/14.jpg"
+featured_image: "/assets/images/service/09.jpg"
+benefits_image: "/assets/images/service/10.jpg"
+permalink: /services/e-mobolity-and-e-charging/
 eleventyNavigation:
   parent: Services
   title: E-mobility and E-charging
@@ -21,7 +22,7 @@ steps:
   description: "Our approach to e-mobility implementation."
   items:
     - "Needs assessment and planning"
-    - "Infrastructure deployment"
+    - "Electric infrastructure and deployment"
     - "Ongoing support and maintenance"
 contact_info:
   email: "info@zeronetcleanenergy.com"

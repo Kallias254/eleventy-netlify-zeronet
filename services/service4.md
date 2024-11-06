@@ -4,6 +4,7 @@ title: "Energy Efficiency"
 description: "Comprehensive energy efficiency solutions to optimize consumption and reduce costs."
 featured_image: "/assets/images/service/07.jpg"
 benefits_image: "/assets/images/service/08.jpg"
+permalink: /services/energy-efficiency/
 eleventyNavigation:
   parent: Services
   title: Energy Efficiency

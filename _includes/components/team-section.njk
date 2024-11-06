@@ -1,0 +1,49 @@
+<!-- rts team area start -->
+<div class="rts-team-area rts-section-gapBottom reveal">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-area-center title-g">
+                    <p class="pre skew-up">
+                        <span>{{ team.preTitle.prefix }}</span> {{ team.preTitle.main }}
+                    </p>
+                    <h2 class="title skew-up">
+                        {{ team.title }}
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt--30 g-24">
+            {% for member in team.members %}
+            <div class="col-lg-3">
+                <div class="solar-energy-team">
+                    <div class="thumbnail">
+                        <img src="/{{ member.image }}" alt="{{ member.name }}">
+                        <div class="share-team-h1">
+                            <a href="#" class="share-icon">
+                                <i class="fa-regular fa-share-nodes"></i>
+                            </a>
+                            <ul class="share-nav">
+                                {% for social in member.socialLinks %}
+                                <li>
+                                    <a href="{{ social.url }}">
+                                        <i class="fa-brands fa-{{ social.platform }}"></i>
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="inner-content">
+                        <a href="{{ member.detailsUrl }}">
+                            <h5 class="title">{{ member.name }}</h5>
+                        </a>
+                        <span>{{ member.role }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- rts team area end -->

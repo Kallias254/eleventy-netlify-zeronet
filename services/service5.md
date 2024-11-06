@@ -4,6 +4,7 @@ title: "O&M, Assets Management"
 description: "Professional operations, maintenance, and asset management services for renewable energy systems."
 featured_image: "/assets/images/service/09.jpg"
 benefits_image: "/assets/images/service/10.jpg"
+permalink: /services/operations-and-maintenance/
 eleventyNavigation:
   parent: Services
   title: O&M and Asset Management

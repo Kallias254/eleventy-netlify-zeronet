@@ -2,8 +2,9 @@
 layout: layouts/service-details.njk
 title: "Solar Cleaning Technology"
 description: "Advanced solar panel cleaning solutions for optimal system performance."
-featured_image: "/assets/images/service/11.jpg"
-benefits_image: "/assets/images/service/12.jpg"
+featured_image: "/assets/images/service/09.jpg"
+benefits_image: "/assets/images/service/10.jpg"
+permalink: /services/solar-cleaning-technology/
 eleventyNavigation:
   parent: Services
   title: Solar Cleaning Technology

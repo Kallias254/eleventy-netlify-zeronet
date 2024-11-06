@@ -1,0 +1,89 @@
+{
+  "preTitle": {
+    "prefix": "Our",
+    "main": "Expert team"
+  },
+  "title": "Expert Team Members",
+  "members": [
+    {
+      "name": "Mark Makana",
+      "role": "Solar Specialist",
+      "image": "assets/images/team/17.png",
+      "detailsUrl": "team-details.html",
+      "socialLinks": [
+        {
+          "platform": "facebook-f",
+          "url": "#"
+        },
+        {
+          "platform": "twitter",
+          "url": "#"
+        },
+        {
+          "platform": "skype",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "John Makana",
+      "role": "Solar Specialist",
+      "image": "assets/images/team/18.png",
+      "detailsUrl": "team-details.html",
+      "socialLinks": [
+        {
+          "platform": "facebook-f",
+          "url": "#"
+        },
+        {
+          "platform": "twitter",
+          "url": "#"
+        },
+        {
+          "platform": "skype",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "Arvvani Joe",
+      "role": "Solar Specialist",
+      "image": "assets/images/team/19.png",
+      "detailsUrl": "team-details.html",
+      "socialLinks": [
+        {
+          "platform": "facebook-f",
+          "url": "#"
+        },
+        {
+          "platform": "twitter",
+          "url": "#"
+        },
+        {
+          "platform": "skype",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "Matchine Mue",
+      "role": "Solar Specialist",
+      "image": "assets/images/team/20.png",
+      "detailsUrl": "team-details.html",
+      "socialLinks": [
+        {
+          "platform": "facebook-f",
+          "url": "#"
+        },
+        {
+          "platform": "twitter",
+          "url": "#"
+        },
+        {
+          "platform": "skype",
+          "url": "#"
+        }
+      ]
+    }
+  ]
+}

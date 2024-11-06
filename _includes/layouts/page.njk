@@ -1,31 +1,17 @@
 ---
 layout: layouts/base.njk
-section: {{ title }}
+section: page
 ---
+{# Include breadcrumb for all pages #}
+{% include "components/breadcrumb.njk" %}
 
-<!-- Header style two -->
-<!-- RTS Breadcrumb Area -->
-<div class="rts-bread-crumb-area bg_image bg-breadcrumb">
-  <div class="container ptb--65">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="con-tent-main">
-          <div class="wrapper">
-            <span class="bg-text-stok">{{ section }}</span>
-            <div class="title skew-up">
-              <a href="#">{{ title }}</a>
-            </div>
-            <div class="slug skew-up">
-              <a href="/">HOME /</a>
-              <a class="active" href="#">{{ title }}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- RTS Breadcrumb Area End -->
-<!-- Header style two End -->
+{# Dynamic page content inclusion based on page type #}
+{% if pageType %}
+  {% set pageTemplate = "components/pages/" + pageType + "/index.njk" %}
+  {% include pageTemplate %}
+{% endif %}
 
-{{ layoutContent | safe }}
+{# Main content from markdown files #}
+<main class="page-content">
+  {{ content | safe }}
+</main>
