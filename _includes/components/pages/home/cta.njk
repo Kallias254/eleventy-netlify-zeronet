@@ -6,19 +6,29 @@
                 <div class="cta-solari-wrapper">
                     <div class="left-area">
                         <span class="pre skew-up">
-                           <span>Feel Free</span> To Contact US
+                            <span>{{ ctaSection.preTitle }}</span> {{ ctaSection.preHighlight }}
                         </span>
-                        <h4 class="title skew-up">Get Free Consultancy or <br> +1 (800) 123 446 559</h4>
+                        <h4 class="title skew-up">{{ ctaSection.title | safe }}</h4>
+                        {% if ctaSection.subtitle %}
+                        <p class="subtitle">{{ ctaSection.subtitle }}</p>
+                        {% endif %}
                     </div>
                     <div class="right-area">
                         <form action="#" class="cta-form">
-                            <div class="single-input">
-                                <input type="text" placeholder="Your Name" required>
-                            </div>
-                            <div class="single-input">
-                                <input type="text" placeholder="Your Email" required>
-                            </div>
-                            <button class="rts-btn btn-primary">Get It Now</button>
+                            {% for field in ctaSection.form %}
+                                {% if field.type !== 'button' %}
+                                <div class="single-input">
+                                    <input
+                                        type="{{ field.type }}"
+                                        placeholder="{{ field.placeholder }}"
+                                        id="{{ field.id }}"
+                                        {% if field.required %}required{% endif %}
+                                    >
+                                </div>
+                                {% else %}
+                                <button class="{{ field.class }}">{{ field.text }}</button>
+                                {% endif %}
+                            {% endfor %}
                         </form>
                     </div>
                 </div>

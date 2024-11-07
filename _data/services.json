@@ -1,0 +1,83 @@
+{
+  "title": "Our Services",
+  "description": "Professional solar energy services including installation, maintenance, and consultancy",
+  "services": [
+    {
+      "title": "Business Development",
+      "category": "Strategic Services",
+      "thumbnail": "/assets/images/project/01.jpg",
+      "slug": "business-development",
+      "description": "Strategic business development and consulting services for renewable energy projects and sustainable ventures",
+      "shapes": {
+        "top": "/assets/images/project/shape/01.png",
+        "bottom": "/assets/images/project/shape/02.png"
+      }
+    },
+    {
+      "title": "Project Development",
+      "category": "Development",
+      "thumbnail": "/assets/images/project/02.jpg",
+      "slug": "project-development",
+      "description": "End-to-end project development services for renewable energy initiatives",
+      "shapes": {
+        "top": "/assets/images/project/shape/01.png",
+        "bottom": "/assets/images/project/shape/02.png"
+      }
+    },
+    {
+      "title": "EPC Services",
+      "category": "Engineering",
+      "thumbnail": "/assets/images/project/03.jpg",
+      "slug": "epc-services",
+      "description": "Engineering, Procurement and Construction services for renewable energy projects",
+      "shapes": {
+        "top": "/assets/images/project/shape/01.png",
+        "bottom": "/assets/images/project/shape/02.png"
+      }
+    },
+    {
+      "title": "Energy Efficiency",
+      "category": "Optimization",
+      "thumbnail": "/assets/images/project/04.jpg",
+      "slug": "energy-efficiency",
+      "description": "Energy optimization and efficiency improvement solutions",
+      "shapes": {
+        "top": "/assets/images/project/shape/01.png",
+        "bottom": "/assets/images/project/shape/02.png"
+      }
+    },
+    {
+      "title": "O&M, Assets Management",
+      "category": "Management",
+      "thumbnail": "/assets/images/project/05.jpg",
+      "slug": "operations-and-maintenance",
+      "description": "Operations, maintenance and asset management services",
+      "shapes": {
+        "top": "/assets/images/project/shape/01.png",
+        "bottom": "/assets/images/project/shape/02.png"
+      }
+    },
+    {
+      "title": "Solar Cleaning Technology",
+      "category": "Technology",
+      "thumbnail": "/assets/images/project/03.jpg",
+      "slug": "solar-cleaning-technology",
+      "description": "Advanced solar panel cleaning and maintenance technology",
+      "shapes": {
+        "top": "/assets/images/project/shape/01.png",
+        "bottom": "/assets/images/project/shape/02.png"
+      }
+    },
+    {
+      "title": "E-mobility and E-charging",
+      "category": "Electric Mobility",
+      "thumbnail": "/assets/images/project/01.jpg",
+      "slug": "e-mobility-charging",
+      "description": "Electric vehicle charging infrastructure and mobility solutions",
+      "shapes": {
+        "top": "/assets/images/project/shape/01.png",
+        "bottom": "/assets/images/project/shape/02.png"
+      }
+    }
+  ]
+}

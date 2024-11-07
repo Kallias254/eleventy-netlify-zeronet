@@ -1,172 +1,53 @@
-
-    <!-- rts case studies area start -->
-    <div class="rts-case-studyes rts-section-gapBottom bg-white">
-        <span class="stok-bg images-r">
-            Work Process
-        </span>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-area-center">
-                        <p class="pre skew-up">
-                            <span>Our</span> Working Process
-                        </p>
-                        <h2 class="title skew-up">
-                            Project Planning
-                        </h2>
-                    </div>
+<!-- rts case studies area start -->
+<div class="rts-case-studyes rts-section-gapBottom bg-white">
+    <span class="stok-bg images-r">
+        Work Process
+    </span>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-area-center">
+                    <p class="pre skew-up">
+                        <span>{{ workingProcessSection.preTitle }}</span> {{ workingProcessSection.preHighlight }}
+                    </p>
+                    <h2 class="title skew-up">
+                        {{ workingProcessSection.title }}
+                    </h2>
                 </div>
             </div>
         </div>
-        <div class="container-full mt--45">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="air-condition-swiper-wrapper">
-                        <div class="swiper mySwiper-h-2-c">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <!-- single case air condition start-->
-                                    <div class="single-case-ac">
-                                        <a href="project-details.html" class="thumbnail">
-                                            <img src="assets/images/project/12.jpg" alt="air-condition">
-                                        </a>
-                                        <div class="inner-content">
-                                            <div class="inner">
-                                                <span class="pre">CHALLENGE</span>
-                                                <a href="project-details.html">
-                                                    <h5 class="title">Official Cleaning Service</h5>
-                                                </a>
-                                            </div>
+    </div>
+    <div class="container-full mt--45">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="air-condition-swiper-wrapper">
+                    <div class="swiper mySwiper-h-2-c">
+                        <div class="swiper-wrapper">
+                            {% for slide in workingProcessSection.processSlides %}
+                            <div class="swiper-slide">
+                                <!-- single case air condition start-->
+                                <div class="single-case-ac">
+                                    <a href="project-details.html" class="thumbnail">
+                                        <img src="{{ slide.image }}" alt="{{ slide.title }}">
+                                    </a>
+                                    <div class="inner-content">
+                                        <div class="inner">
+                                            <span class="pre">{{ slide.label }}</span>
+                                            <a href="project-details.html">
+                                                <h5 class="title">{{ slide.title }}</h5>
+                                            </a>
                                         </div>
                                     </div>
-                                    <!-- single case air condition end -->
                                 </div>
-                                <div class="swiper-slide">
-                                    <!-- single case air condition start-->
-                                    <div class="single-case-ac">
-                                        <a href="project-details.html" class="thumbnail">
-                                            <img src="assets/images/project/24.jpg" alt="air-condition">
-                                        </a>
-                                        <div class="inner-content">
-                                            <div class="inner">
-                                                <span class="pre">CHALLENGE</span>
-                                                <a href="project-details.html">
-                                                    <h5 class="title">Official Cleaning Service</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single case air condition end -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <!-- single case air condition start-->
-                                    <div class="single-case-ac">
-                                        <a href="project-details.html" class="thumbnail">
-                                            <img src="assets/images/project/25.jpg" alt="air-condition">
-                                        </a>
-                                        <div class="inner-content">
-                                            <div class="inner">
-                                                <span class="pre">CHALLENGE</span>
-                                                <a href="project-details.html">
-                                                    <h5 class="title">Official Cleaning Service</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single case air condition end -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <!-- single case air condition start-->
-                                    <div class="single-case-ac">
-                                        <a href="project-details.html" class="thumbnail">
-                                            <img src="assets/images/project/26.jpg" alt="air-condition">
-                                        </a>
-                                        <div class="inner-content">
-                                            <div class="inner">
-                                                <span class="pre">CHALLENGE</span>
-                                                <a href="project-details.html">
-                                                    <h5 class="title">Official Cleaning Service</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single case air condition end -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <!-- single case air condition start-->
-                                    <div class="single-case-ac">
-                                        <a href="project-details.html" class="thumbnail">
-                                            <img src="assets/images/project/12.jpg" alt="air-condition">
-                                        </a>
-                                        <div class="inner-content">
-                                            <div class="inner">
-                                                <span class="pre">CHALLENGE</span>
-                                                <a href="project-details.html">
-                                                    <h5 class="title">Official Cleaning Service</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single case air condition end -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <!-- single case air condition start-->
-                                    <div class="single-case-ac">
-                                        <a href="project-details.html" class="thumbnail">
-                                            <img src="assets/images/project/24.jpg" alt="air-condition">
-                                        </a>
-                                        <div class="inner-content">
-                                            <div class="inner">
-                                                <span class="pre">CHALLENGE</span>
-                                                <a href="project-details.html">
-                                                    <h5 class="title">Official Cleaning Service</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single case air condition end -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <!-- single case air condition start-->
-                                    <div class="single-case-ac">
-                                        <a href="project-details.html" class="thumbnail">
-                                            <img src="assets/images/project/25.jpg" alt="air-condition">
-                                        </a>
-                                        <div class="inner-content">
-                                            <div class="inner">
-                                                <span class="pre">CHALLENGE</span>
-                                                <a href="project-details.html">
-                                                    <h5 class="title">Official Cleaning Service</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single case air condition end -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <!-- single case air condition start-->
-                                    <div class="single-case-ac">
-                                        <a href="project-details.html" class="thumbnail">
-                                            <img src="assets/images/project/26.jpg" alt="air-condition">
-                                        </a>
-                                        <div class="inner-content">
-                                            <div class="inner">
-                                                <span class="pre">CHALLENGE</span>
-                                                <a href="project-details.html">
-                                                    <h5 class="title">Official Cleaning Service</h5>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single case air condition end -->
-                                </div>
+                                <!-- single case air condition end -->
                             </div>
-                            <div class="swiper-pagination-h2-c"></div>
+                            {% endfor %}
                         </div>
-
+                        <div class="swiper-pagination-h2-c"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- rts-case studyes ends -->
+</div>
+<!-- rts case studies area end -->

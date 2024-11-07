@@ -4,7 +4,7 @@ title: "E-mobility and E-charging"
 description: "Comprehensive electric vehicle charging infrastructure and mobility solutions."
 featured_image: "/assets/images/service/09.jpg"
 benefits_image: "/assets/images/service/10.jpg"
-permalink: /services/e-mobolity-and-e-charging/
+permalink: /services/e-mobility-charging/
 eleventyNavigation:
   parent: Services
   title: E-mobility and E-charging

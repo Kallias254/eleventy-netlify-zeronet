@@ -52,7 +52,7 @@ services:
 
   - title: "Solar Cleaning Technology"
     category: "Technology"
-    thumbnail: /assets/images/project/06.jpg
+    thumbnail: /assets/images/project/03.jpg
     slug: solar-cleaning-technology
     shapes:
       top: /assets/images/project/shape/01.png
@@ -60,7 +60,7 @@ services:
 
   - title: "E-mobility and E-charging"
     category: "Electric Mobility"
-    thumbnail: /assets/images/project/07.jpg
+    thumbnail: /assets/images/project/01.jpg
     slug: e-mobility-charging
     shapes:
       top: /assets/images/project/shape/01.png
