@@ -7,10 +7,41 @@
     "email": "info@zeronetcleanenergy.com"
   },
   "defaultSocialImage": "/assets/images/default-social.jpg",
-  "contact": {
-    "developer": {
-      "name": "Joseph Miseda",
-      "email": "misedajoseph@gmail.com"
-    }
+  "footer": {
+    "logo": "/assets/images/logo/logo-02.png",
+    "about": "Powering Progress, Energizing Sustainability",
+    "contact": {
+      "phone": {
+        "number": "(+256) 771 326 180",
+        "label": "Phone Number"
+      },
+      "email": {
+        "address": "info@zeronetcleanenergy.com",
+        "label": "Email Us Here"
+      },
+      "address": {
+        "line1": "Central Division, Nakasero I",
+        "line2": "Fairway, Kampala- Uganda",
+        "maps_url": "https://www.google.com/maps"
+      }
+    },
+    "social": {
+      "twitter": "#",
+      "linkedin": "https://www.linkedin.com/company/zeronet-clean-energy-ltd/"
+    },
+    "resources": [
+      {
+        "title": "About Us",
+        "url": "aboutus.html"
+      },
+      {
+        "title": "Privacy policy",
+        "url": "service.html"
+      },
+      {
+        "title": "Terms & conditions",
+        "url": "team.html"
+      }
+    ]
   }
 }

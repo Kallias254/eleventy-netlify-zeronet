@@ -1,39 +1,14 @@
-{% set services = [
-  {
-    title: "Eco Friendly",
-    description: "Litarrices sociosqu in commodo quam proin facilisis",
-    icon: '<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="29.5" stroke="#E9E9E9"/><path d="M30.7778 37.6112C30.8644 38.3254 30.6734 38.9772..." fill="#1F1F25"/></svg>'
-  },
-  {
-    title: "Easy Installation",
-    description: "Litarrices sociosqu in commodo quam proin facilisis",
-    icon: '<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="29.5" stroke="#E9E9E9"/><path d="M48 33.8061V26.1939H43.851..." fill="#1F1F25"/></svg>'
-  },
-  {
-    title: "Low Maintenance",
-    description: "Litarrices sociosqu in commodo quam proin facilisis",
-    icon: '<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="29.5" stroke="#E9E9E9"/><path d="M46.1647 39.7097L42.3465..." fill="#1F1F25"/></svg>'
-  },
-  {
-    title: "Affordable Price",
-    description: "Litarrices sociosqu in commodo quam proin facilisis",
-    icon: '<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="29.5" stroke="#E9E9E9"/><path d="M30.7778 37.6112C30.8644..." fill="#1F1F25"/></svg>'
-  }
-] %}
-
-<!-- rts service area start -->
+<!-- service-area.njk -->
 <div class="rts-secvice-area-solaric-banner-bottom start rts-section-gapBottom">
     <div class="container">
         <div class="row g-24">
-            {% for service in services %}
+            {% for service in serviceAreaSection.items %}
             <div class="col-lg-3 col-md-6 cols-md-12 col-12">
                 <div class="single-service-solari {% if loop.index > 1 %}{{ loop.index }}{% endif %}">
                     <div class="icon-area">
                         {{ service.icon | safe }}
                     </div>
-                    <a href="service-details.html">
-                        <h5 class="title">{{ service.title }}</h5>
-                    </a>
+                    <h5 class="title">{{ service.title }}</h5>
                     <p class="disc">
                         {{ service.description }}
                     </p>
@@ -43,4 +18,3 @@
         </div>
     </div>
 </div>
-<!-- rts service area end -->

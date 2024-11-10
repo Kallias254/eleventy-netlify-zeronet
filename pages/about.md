@@ -11,47 +11,27 @@ eleventyNavigation:
   order: 1
 tabs:
   - title: Why Choose Us?
-    description: "Ontes mauris eget aliquet fermentum venenatis..."
+    description: "At ZeroNet Clean Energy, we combine innovation with expertise to lead Uganda's renewable energy transition. As an established Independent Power Producer since 2021, we deliver comprehensive end-to-end renewable energy solutions that transform how businesses access and utilize clean energy."
     image: "/assets/images/about/21.jpg"
     altText: "About our team"
     checkList:
-      - Experienced Team of Experts
-      - First-Class Customer Service
-      - Flexible Work Environment
-      - Provide Quality Service
-  - title: Our Mission
-    description: "Our mission is to provide clean and sustainable energy..."
+      - Proven Track Record
+      - End-to-end renewable energy services
+      - Local Expertise
+  - title: Mission & Values
+    description: "Our mission is to accelerate Sub-Saharan Africa's transition to sustainable energy by providing reliable, affordable, and clean power solutions. We are guided by core values that shape every aspect of our operations and relationships."
     image: "/assets/images/about/21.jpg"
     altText: "Our Mission"
     checkList:
-      - Sustainable Practices
-      - Innovative Technology
+      - Integrity & Excellence
+      - Innovation & Sustainability
+      - Community Impact
   - title: Our Goal
-    description: "We aim to make solar energy accessible for everyone..."
+    description: "We are building a future where clean energy drives Africa's sustainable development. With clear objectives and a strategic roadmap, we aim to expand our impact across Sub-Saharan Africa while maintaining our commitment to excellence and sustainability."
     image: "/assets/images/about/21.jpg"
     altText: "Our Goal"
     checkList:
-      - 100% Clean Energy
-      - Customer Satisfaction
-sectionSteps:
-  preTitle: "Quality Handyman"
-  preHighlight: "Solution"
-  title: "Easy Quick Following Steps"
-  steps:
-    - icon: "clipboard-check" # This will correspond to an SVG icon
-      title: "Register For Work"
-      description: "Vulputate libero morbi suscipit curabitur cum aliqam nascetur laoreet nam"
-      number: "01"
-    - icon: "search-check"
-      title: "Inspect & Analyze"
-      description: "Vulputate libero morbi suscipit curabitur cum aliqam nascetur laoreet nam"
-      number: "02"
-    - icon: "settings"
-      title: "Work Processing"
-      description: "Vulputate libero morbi suscipit curabitur cum aliqam nascetur laoreet nam"
-      number: "03"
-    - icon: "package-check"
-      title: "Handover Clients"
-      description: "Vulputate libero morbi suscipit curabitur cum aliqam nascetur laoreet nam"
-      number: "04"
+      - Market Leadership
+      - Technology Advancement
+      - Sustainable Growth
 ---

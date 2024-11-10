@@ -61,6 +61,16 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  // Add JSON data access
+  eleventyConfig.addGlobalData("servicesData", () => {
+    return require("./_data/services.json");
+  });
+
+  // Add slice filter for getting first N items
+  eleventyConfig.addFilter("slice", function (array, start, end) {
+    return array.slice(start, end);
+  });
+
   // Custom Collections
   eleventyConfig.addCollection("services", (collection) => {
     return collection.getFilteredByGlob("services/*.md");
@@ -104,10 +114,8 @@ module.exports = function (eleventyConfig) {
   // Add specific watch targets for the assets
   eleventyConfig.addWatchTarget("./_includes/assets/");
 
-  // Add Date filter
-  eleventyConfig.addFilter("year", function () {
-    return new Date().getFullYear();
-  });
+  // Add as a shortcode
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // Watch Targets
   // eleventyConfig.addWatchTarget("./_includes/assets/css/");

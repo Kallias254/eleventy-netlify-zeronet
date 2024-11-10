@@ -6,65 +6,64 @@ permalink: /
 eleventyNavigation:
   key: Home
   order: 0
+
 bannerSection:
   slides:
     - preTitle: Welcome
-      preHighlight: To ZERONET
-      title: Harnessing the Wind and Sun for Future
-      description: In a world where renewable resources have become paramount, we believe in the boundless power of nature to shape.
-
+      preHighlight: To ZERONET Clean Energy
+      title: Powering Africa's C&I Sector with Green Energy
+      description: Harnessing nature's boundless energy to transform commercial and industrial sectors sustainably.
+      cta:
+        label: Our Strategy
+        url: /strategy/
     - preTitle: Welcome
-      preHighlight: To ZERONET
-      title: Leading the Future of Clean Energy
-      description: Transforming global energy systems with innovative renewable solutions for a sustainable tomorrow.
-
+      preHighlight: To ZERONET Clean Energy
+      title: Unlocking Africa's Renewable Energy Potential
+      description: Driving global energy transformation with sustainable and innovative renewable solutions.
+      cta:
+        label: Our Vision
+        url: /about/
     - preTitle: Welcome
-      preHighlight: To ZERONET
-      title: Powering a Greener Tomorrow
-      description: Join us in creating a sustainable future through advanced renewable energy technologies and solutions.
-  # Common elements for all slides
-  cta:
-    label: Learn More
-    url: aboutus.html
+      preHighlight: To ZERONET Clean Energy
+      title: We are Professionals with a Vision
+      description: Committed to a future driven by advanced renewable energy technologies and impactful solutions.
+      cta:
+        label: Our Approach
+        url: /strategy/
   videoButton:
-    label: Intro Video
-    url: "#"serviceAreaSection:
+    label: Watch Our Story
+    url: "#"
+
+serviceAreaSection:
   items:
-    - title: Eco Friendlys
-      icon: eco-friendly-icon
-      description: Litarrices sociosqu in commodo quam proin facilisis
-    - title: Easy Installation
-      icon: installation-icon
-      description: Litarrices sociosqu in commodo quam proin facilisis
-    - title: Low Maintenance
-      icon: maintenance-icon
-      description: Litarrices sociosqu in commodo quam proin facilisis
-    - title: Affordable Price
-      icon: price-icon
-      description: Litarrices sociosqu in commodo quam proin facilisis
+
+    - title: Industry Expertise
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4AAB3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-check"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>'
+      description: Over 20 years experience in renewable energy. Certified professionals delivering quality installations and service.
+
+    - title: Energy Cost Savings
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4AAB3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-piggy-bank"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2h0V5z"/><path d="M2 9v1c0 1.1.9 2 2 2h1"/><path d="M16 11h0"/></svg>'
+      description: Reduce energy costs up to 40% through solar incentives and credits. See returns within 5-7 years.
+
+    - title: Community Focus
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4AAB3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
+      description: Building sustainable neighborhoods together. We partner with communities to create energy solutions that reflect local values.
+
+    - title: Custom Solutions
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4AAB3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>'
+      description: Tailored renewable systems designed for your specific needs, usage patterns, and property characteristics.
+
 aboutSection:
   preTitle: About
-  preHighlight: Company
-  title: Our mission is to make solar energy accessible
-  description: we are passionate about transforming the way we power our world. As a leading provider of renewable energy solutions, we are committed to driving the transition to a cleaner, more sustainable future.
+  preHighlight: ZERONET Clean Energy Ltd
+  title: We Are an Independent Power Producer (IPP)
+  description: ZERONET Clean Energy Ltd is dedicated to advancing renewable energy across Sub-Saharan Africa. We specialize in providing cost-effective, reliable, and environmentally positive energy solutions, helping businesses thrive while promoting a sustainable future.
   stats:
-    - number: 14000+
-      label: Installed Capacity
-    - number: 60%
-      label: Save World
-servicesSection:
-  preTitle: Our
-  preHighlight: Services
-  title: Produce Your Own Clean Save The Environments
-  services:
-    - title: Solar Panel Services
-      description: Acinia phaselus tellus egstas into cursus urna suscpit vehicula otua pellentesque placerat
-    - title: Turbines Services
-      description: Acinia phaselus tellus egstas into cursus urna suscpit vehicula otua pellentesque placerat
-    - title: Hydropower Plants
-      description: Acinia phaselus tellus egstas into cursus urna suscpit vehicula otua pellentesque placerat
-    - title: Fossil Resources
-      description: Acinia phaselus tellus egstas into cursus urna suscpit vehicula otua pellentesque placerat
+    - number: 100+
+      label: Communities Empowered
+    - number: 75%
+      label: Reduced Carbon
+
 workingProcessSection:
   preTitle: Our
   preHighlight: Working Process
@@ -93,10 +92,11 @@ workingProcessSection:
     - image: "assets/images/project/24.jpg"
       title: "Testing & Handover"
       label: "STEP 06"
+
 faqSection:
-  preTitle: Question
-  preHighlight: For US
-  title: Some General Question?
+  preTitle: Questions
+  preHighlight: '& Answers'
+  title: Common Questions?
   thumbnails:
     small: "assets/images/faq/04.png"
     large: "assets/images/faq/05.png"
@@ -125,7 +125,7 @@ faqSection:
 ctaSection:
   preTitle: Ready to Switch
   preHighlight: to Solar Power?
-  title: Schedule Your Free Solar Consultation<br>Call (+256) 771 326 180
+  title: Schedule Your Free Solar Consultation
   subtitle: "Save up to 50% on your energy bills"
   form:
     - type: text
@@ -141,11 +141,15 @@ ctaSection:
       class: "rts-btn btn-primary"
 
 partnersSection:
-  title: Our Partners
   logos:
     - src: assets/images/brand/01.png
+      alt: brand_start
     - src: assets/images/brand/02.png
+      alt: brand_start
     - src: assets/images/brand/03.png
+      alt: brand_start
     - src: assets/images/brand/04.png
+      alt: brand_start
     - src: assets/images/brand/05.png
+      alt: brand_start
 ---

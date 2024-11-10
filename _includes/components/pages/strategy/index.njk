@@ -6,7 +6,11 @@
         <div class="choose-us-content-left-wrapper-4">
           <div class="solari-title-area-four">
             <span class="pre-title skew-up">Core Strategies</span>
-            <h2 class="title skew-up">Our vision is to make solar energy accessible</h2>
+            <h2 class="title skew-up">
+  Making Clean Energy <br>
+  Accessible Across <br>
+  Sub-Saharan Africa
+</h2>
           </div>
 
           <div class="inner-content">
@@ -60,7 +64,7 @@
         <div class="solar-left-inner-area-cta">
           <div class="title-area-left">
             <p class="pre">
-              <span>About</span> Company
+              <span>Our</span> Impact
             </p>
             <h2 class="title skew-up">
               Energize Society With <br>
@@ -70,24 +74,23 @@
           </div>
           <div class="expertiex-solar-inner">
             {% for item in expertiseItems %}
-            <div class="single-exp">
-              <img src="{{ item.icon }}" alt="icon">
-              <div class="info-wrapper">
-                <h5 class="title">{{ item.title }}</h5>
-                <p class="dsic">
-                  {{ item.description }}
-                </p>
-              </div>
-            </div>
-            {% endfor %}
+<div class="single-exp">
+  <i class="{{ item.icon }} fa-3x" style="color: #24823d;"></i> <!-- Updated to use FontAwesome -->
+  <div class="info-wrapper">
+    <h5 class="title">{{ item.title }}</h5>
+    <p class="dsic">
+      {{ item.description }}
+    </p>
+  </div>
+</div>            {% endfor %}
           </div>
           <div class="button-area">
-            <a href="#" class="rts-btn btn-primary">Read More <i class="fa-regular fa-arrow-right"></i></a>
+            <a href="/appointments/" class="rts-btn btn-primary">Partner With Us <i class="fa-regular fa-arrow-right"></i></a>
             <div class="call-btn">
               <i class="fa-solid fa-phone"></i>
               <div class="info">
                 <span>Call Us 24/7</span>
-                <a href="#" class="title">+236-3256.21456</a>
+                <a href="#" class="title">{{ metadata.footer.contact.phone.number }}</a>
               </div>
             </div>
           </div>

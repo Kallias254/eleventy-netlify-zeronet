@@ -1,18 +1,18 @@
 {
   "preTitle": {
     "prefix": "Our",
-    "main": "Expert team"
+    "main": "Leadership Team"
   },
-  "title": "Expert Team Members",
+  "title": "Meet Our Team",
   "members": [
     {
-      "name": "Mark Makana",
-      "role": "Solar Specialist",
+      "name": "Paul Lopusingiro",
+      "role": "Chief Executive Officer",
       "image": "assets/images/team/17.png",
       "detailsUrl": "team-details.html",
       "socialLinks": [
         {
-          "platform": "facebook-f",
+          "platform": "linkedin",
           "url": "#"
         },
         {
@@ -20,19 +20,19 @@
           "url": "#"
         },
         {
-          "platform": "skype",
-          "url": "#"
+          "platform": "envelope",
+          "url": "mailto:example@email.com"
         }
       ]
     },
     {
-      "name": "John Makana",
-      "role": "Solar Specialist",
+      "name": "To be filled",
+      "role": "Finance Director",
       "image": "assets/images/team/18.png",
       "detailsUrl": "team-details.html",
       "socialLinks": [
         {
-          "platform": "facebook-f",
+          "platform": "linkedin",
           "url": "#"
         },
         {
@@ -40,19 +40,19 @@
           "url": "#"
         },
         {
-          "platform": "skype",
-          "url": "#"
+          "platform": "envelope",
+          "url": "mailto:example@email.com"
         }
       ]
     },
     {
-      "name": "Arvvani Joe",
-      "role": "Solar Specialist",
+      "name": "To be filled",
+      "role": "Technical Director",
       "image": "assets/images/team/19.png",
       "detailsUrl": "team-details.html",
       "socialLinks": [
         {
-          "platform": "facebook-f",
+          "platform": "linkedin",
           "url": "#"
         },
         {
@@ -60,19 +60,19 @@
           "url": "#"
         },
         {
-          "platform": "skype",
-          "url": "#"
+          "platform": "envelope",
+          "url": "mailto:example@email.com"
         }
       ]
     },
     {
-      "name": "Matchine Mue",
-      "role": "Solar Specialist",
+      "name": "To be filled",
+      "role": "Business Development Director",
       "image": "assets/images/team/20.png",
       "detailsUrl": "team-details.html",
       "socialLinks": [
         {
-          "platform": "facebook-f",
+          "platform": "linkedin",
           "url": "#"
         },
         {
@@ -80,8 +80,8 @@
           "url": "#"
         },
         {
-          "platform": "skype",
-          "url": "#"
+          "platform": "envelope",
+          "url": "mailto:example@email.com"
         }
       ]
     }

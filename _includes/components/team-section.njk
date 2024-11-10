@@ -23,16 +23,15 @@
                             <a href="#" class="share-icon">
                                 <i class="fa-regular fa-share-nodes"></i>
                             </a>
-                            <ul class="share-nav">
-                                {% for social in member.socialLinks %}
-                                <li>
-                                    <a href="{{ social.url }}">
-                                        <i class="fa-brands fa-{{ social.platform }}"></i>
-                                    </a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
+<ul class="share-nav">
+    {% for social in member.socialLinks %}
+    <li>
+        <a href="{{ social.url }}">
+            <i class="{% if social.platform == 'envelope' %}fa-solid{% else %}fa-brands{% endif %} fa-{{ social.platform }}"></i>
+        </a>
+    </li>
+    {% endfor %}
+</ul>                        </div>
                     </div>
                     <div class="inner-content">
                         <a href="{{ member.detailsUrl }}">

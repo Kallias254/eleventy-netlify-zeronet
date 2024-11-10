@@ -6,7 +6,7 @@ pageType: appointments
 metaDescription: Book a consultation with our solar energy experts
 permalink: /appointments/
 experience:
-  years: 25
+  years: 3+
   text: Years Experience
 serviceOptions:
 - text: Business Inquiries
