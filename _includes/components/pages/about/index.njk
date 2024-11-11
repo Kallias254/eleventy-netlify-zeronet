@@ -6,7 +6,7 @@
         <!-- Image area -->
         <div class="rts-about-left-image-area">
           <div class="thumbnail">
-            <img src="/assets/images/about/20.png" alt="solar energy">
+            <img src="{{ mainImage }}" alt="ZERONET Clean Energy">
           </div>
         </div>
       </div>
@@ -62,10 +62,10 @@
                   <div class="vedio-icone">
                     <a class="play-video video-play-button" href="#">
                       <span></span>
-                      <p class="text">Play Video</p>
+                      <p class="text">{{ video.buttonText }}</p>
                     </a>
                     <div class="video-overlay">
-                      <a class="video-overlay-close">×</a>
+                      <a class="video-overlay-close">{{ video.closeText }}</a>
                     </div>
                   </div>
                 </div>
@@ -79,6 +79,14 @@
   </div>
 </div>
 <!-- about area end -->
+
+{% if experienceCounter %}
+<!-- Experience Counter -->
+<div class="experiencea-area images">
+  <h3 class="title">{{ experienceCounter.number }}+</h3>
+  <p>{{ experienceCounter.text }}</p>
+</div>
+{% endif %}
 
 {% include "components/pages/about/about-cta.njk" %}
 {% include "components/team-section.njk" %}

@@ -64,26 +64,28 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 mt_md--50 mt_sm--40">
-                <div class="thumbnail-solari-about">
-                    <img src="assets/images/about/22.png" alt="about">
-                    <div class="vedio-icone">
-                        <a class="video-play-button play-video" href="#">
-                            <span></span>
-                            <p class="text">
-                                Intro Video
-                            </p>
-                        </a>
-                        <div class="video-overlay">
-                            <a class="video-overlay-close">×</a>
-                        </div>
-                    </div>
-                    <div class="experiencea-area images">
-                        <h3 class="title">3+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                </div>
+  <div class="col-lg-6 mt_md--50 mt_sm--40">
+    <div class="thumbnail-solari-about">
+        <img src="{{ aboutSection.image }}" alt="{{ aboutSection.preHighlight }}">
+        {% if aboutSection.video %}
+        <div class="vedio-icone">
+            <a class="video-play-button play-video" href="{{ aboutSection.video }}">
+                <span></span>
+                <p class="text">
+                    Intro Video
+                </p>
+            </a>
+            <div class="video-overlay">
+                <a class="video-overlay-close">×</a>
             </div>
+        </div>
+        {% endif %}
+        <div class="experiencea-area images">
+            <h3 class="title">{{ aboutSection.experienceYears }}+</h3>
+            <p>Years Experience</p>
+        </div>
+    </div>
+</div>
         </div>
     </div>
 </div>
