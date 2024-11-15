@@ -20,8 +20,8 @@
         "label": "Email Us Here"
       },
       "address": {
-        "line1": "Central Division, Nakasero I",
-        "line2": "Fairway, Kampala- Uganda",
+        "line1": "",
+        "line2": "Fairway, Kampala - UG",
         "maps_url": "https://www.google.com/maps"
       }
     },
@@ -32,15 +32,15 @@
     "resources": [
       {
         "title": "About Us",
-        "url": "aboutus.html"
+        "url": "/about/"
       },
       {
         "title": "Privacy policy",
-        "url": "service.html"
+        "url": "/privacy-policy/"
       },
       {
         "title": "Terms & conditions",
-        "url": "team.html"
+        "url": "/terms-and-conditions/"
       }
     ]
   }

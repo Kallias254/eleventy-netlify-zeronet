@@ -2,8 +2,8 @@
 layout: layouts/service-details.njk
 title: "Energy Efficiency"
 description: "Comprehensive energy efficiency solutions to optimize consumption and reduce costs."
-featured_image: "/assets/images/service/07.jpg"
-benefits_image: "/assets/images/service/08.jpg"
+featured_image: "/assets/images/service/eff.jpg"
+benefits_image: "/assets/images/service/eff2.jpg"
 permalink: /services/energy-efficiency/
 eleventyNavigation:
   parent: Services
@@ -28,5 +28,5 @@ contact_info:
   email: "info@zeronetcleanenergy.com"
   phone: "(+256) 771 326 180"
   address: "Nakasero I. Fairway, Kampala UG"
-  hours: "Mon - Sat 8.00 - 18.00. Sunday CLOSED"
+  hours: "Mon - Fri 8 AM - 6 PM. Saturday 9 AM - 2 PM"
 ---

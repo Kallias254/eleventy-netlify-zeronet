@@ -36,14 +36,13 @@ bannerSection:
 
 serviceAreaSection:
   items:
-
     - title: Industry Expertise
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4AAB3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-check"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>'
       description: Over 20 years experience in renewable energy. Certified professionals delivering quality installations and service.
       bgImage: assets/images/services/expertise.jpg
 
     - title: Energy Cost Savings
-      icon: '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4AAB3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-piggy-bank"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2h0V5z"/><path d="M2 9v1c0 1.1.9 2 2 2h1"/><path d="M16 11h0"/></svg>'
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4AAB3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>'
       description: Reduce energy costs up to 40% through solar incentives and credits. See returns within 5-7 years.
       bgImage: assets/images/services/savings.jpg
 
@@ -64,11 +63,11 @@ aboutSection:
   description: ZERONET Clean Energy Ltd is dedicated to advancing renewable energy across Sub-Saharan Africa. We specialize in providing cost-effective, reliable, and environmentally positive energy solutions, helping businesses thrive while promoting a sustainable future.
   image: assets/images/about/22.jpg
   stats:
-    - number: 100+
+    - number:
       label: Communities Empowered
-    - number: 75%
-      label: Reduced Carbon
-  experienceYears: 3
+    - number:
+      label: Reduced Carbon Emissions
+  experienceYears:
 
 workingProcessSection:
   preTitle: Our
@@ -79,24 +78,24 @@ workingProcessSection:
       title: "Research & Analysis"
       label: "STEP 01"
 
-    - image: "assets/images/project/24.jpg"
+    - image: "assets/images/project/projectdesign.jpg"
       title: "Project Design"
       label: "STEP 02"
 
-    - image: "assets/images/project/25.jpg"
+    - image: "assets/images/project/material.jpg"
       title: "Material Selection"
       label: "STEP 03"
 
-    - image: "assets/images/project/26.jpg"
+    - image: "assets/images/project/planning.jpg"
       title: "Installation Planning"
       label: "STEP 04"
 
-    - image: "assets/images/project/12.jpg"
+    - image: "assets/images/project/implement.jpg"
       title: "Implementation"
       label: "STEP 05"
 
-    - image: "assets/images/project/24.jpg"
-      title: "Testing & Handover"
+    - image: "assets/images/project/comissioning.jpg"
+      title: "Commissioning & Handover"
       label: "STEP 06"
 
 faqSection:
@@ -104,8 +103,7 @@ faqSection:
   preHighlight: '& Answers'
   title: Common Questions?
   thumbnails:
-    small: "assets/images/faq/04.png"
-    large: "assets/images/faq/05.png"
+    large: "assets/images/faq/05.jpg"
   questions:
     - question: "What is solar energy, and how does it work?"
       answer: "Solar energy harnesses sunlight through photovoltaic panels that convert light into electricity. These panels contain semiconductors that create an electric current when exposed to sunlight, providing clean, renewable power for homes and businesses."
@@ -123,7 +121,11 @@ faqSection:
       answer: "Standard grid-tied systems automatically shut off during power outages for safety reasons. However, systems with battery backup can continue providing power during outages, ensuring continuous electricity supply to your home."
 
     - question: "What happens on cloudy days or during winter?"
-      answer: "Solar panels still generate electricity on cloudy days, though at reduced efficiency (20-30% of normal output). Modern panels are designed to work effectively in all seasons, including winter, though production may vary with weather conditions."
+      answer: |
+        Solar panels continue to generate electricity on cloudy days, although at a reduced efficiency (typically 20-30% of normal output). Modern solar panels are designed to function effectively in all seasons, including winter, although their energy production may be lower due to factors like reduced sunlight hours and weather conditions.
+
+        To ensure a consistent power supply even during cloudy days or winter months when solar generation may be limited, a Battery Energy Storage System (BESS) can be used to store excess energy generated on sunnier days. This stored energy can then be used when solar output is low, ensuring that your home or business has a reliable and stable power source year-round, regardless of weather conditions.
+
 
     - question: "Are there government incentives for solar installation?"
       answer: "Yes, numerous incentives are available, including federal tax credits, state rebates, and local utility programs. These can significantly reduce the initial installation costs, sometimes by up to 50% or more."

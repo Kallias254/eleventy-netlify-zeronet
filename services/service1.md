@@ -16,8 +16,6 @@ benefits:
   description: "Experience comprehensive business development support tailored to renewable energy ventures."
   items:
     - "Strategic Market Entry & Expansion Planning"
-    - "Partnership & Stakeholder Development"
-    - "Investment & Funding Strategy"
     - "Regulatory Compliance & Policy Navigation"
     - "Sustainable Business Model Development"
     - "Risk Assessment & Mitigation"
@@ -32,7 +30,7 @@ contact_info:
   email: "business@zeronetcleanenergy.com"
   phone: "(+256) 771 326 180"
   address: "Nakasero I. Fairway, Kampala UG"
-  hours: "Mon - Fri 9.00 - 17.00. Saturday by appointment. Sunday CLOSED"
+  hours: "Mon - Fri 8 AM - 6 PM. Saturday 9 AM - 2 PM"
 expertise:
   - "Renewable Energy Market Analysis"
   - "Strategic Partnership Development"

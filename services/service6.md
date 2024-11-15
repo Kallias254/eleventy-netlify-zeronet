@@ -2,8 +2,8 @@
 layout: layouts/service-details.njk
 title: "Solar Cleaning Technology"
 description: "Advanced solar panel cleaning solutions for optimal system performance."
-featured_image: "/assets/images/service/09.jpg"
-benefits_image: "/assets/images/service/10.jpg"
+featured_image: "/assets/images/service/cleaning.jpg"
+benefits_image: "/assets/images/service/cleaning2.jpg"
 permalink: /services/solar-cleaning-technology/
 eleventyNavigation:
   parent: Services
@@ -28,5 +28,5 @@ contact_info:
   email: "info@zeronetcleanenergy.com"
   phone: "(+256) 771 326 180"
   address: "Nakasero I. Fairway, Kampala UG"
-  hours: "Mon - Sat 8.00 - 18.00. Sunday CLOSED"
+  hours: "Mon - Fri 8 AM - 6 PM. Saturday 9 AM - 2 PM"
 ---

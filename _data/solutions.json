@@ -1,0 +1,79 @@
+{
+  "preTitle": "Our Solutions",
+  "title": "Comprehensive Energy Solutions",
+  "description": "We deliver integrated energy solutions that power <br> a sustainable future for homes and businesses.",
+  "items": [
+    {
+      "id": "bess",
+      "tabTitle": "BESS Solutions",
+      "title": "Battery Energy Storage Systems",
+      "description": "Our BESS solutions optimize energy storage and distribution, ensuring reliable power supply while reducing costs and environmental impact.",
+      "additionalInfo": "Designed for maximum efficiency, our storage systems provide seamless backup power, peak shaving, and grid stabilization capabilities.",
+      "mainImage": "/assets/images/service/23.jpg",
+      "detailImage": "/assets/images/service/bess.jpg",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#248223\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-battery-full\"><rect width=\"16\" height=\"10\" x=\"2\" y=\"7\" rx=\"2\" ry=\"2\"/><line x1=\"22\" x2=\"22\" y1=\"11\" y2=\"13\"/><line x1=\"6\" x2=\"6\" y1=\"11\" y2=\"13\"/><line x1=\"10\" x2=\"10\" y1=\"11\" y2=\"13\"/><line x1=\"14\" x2=\"14\" y1=\"11\" y2=\"13\"/></svg>",
+      "features": [
+        "Grid Integration",
+        "Peak Load Management",
+        "24/7 Power Backup",
+        "Smart Energy Control"
+      ],
+      "link": "/services/epc-services/",
+      "buttonText": "Explore EPC Services for BESS"
+    },
+    {
+      "id": "solar",
+      "tabTitle": "Solar PV Solutions",
+      "title": "Solar PV Solutions",
+      "description": "Our comprehensive solar PV solutions deliver reliable, clean energy while maximizing your return on investment through optimized system design.",
+      "additionalInfo": "From residential installations to utility-scale projects, we provide end-to-end solar solutions tailored to your specific needs and location.",
+      "mainImage": "/assets/images/service/solarpv.jpg",
+      "detailImage": "/assets/images/service/pv2.jpg",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#248223\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sun\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2\"/><path d=\"M12 20v2\"/><path d=\"m4.93 4.93 1.41 1.41\"/><path d=\"m17.66 17.66 1.41 1.41\"/><path d=\"M2 12h2\"/><path d=\"M20 12h2\"/><path d=\"m6.34 17.66-1.41 1.41\"/><path d=\"m19.07 4.93-1.41 1.41\"/></svg>",
+      "features": [
+        "Custom Design",
+        "Performance Monitoring",
+        "Energy Optimization",
+        "Maintenance Support"
+      ],
+      "link": "/services/project-development/",
+      "buttonText": "Explore Project Development Services"
+    },
+    {
+      "id": "commercial",
+      "tabTitle": "Commercial Solutions",
+      "title": "Commercial & Industrial Solutions",
+      "description": "Our commercial energy solutions help businesses reduce operational costs while meeting sustainability goals through efficient energy management.",
+      "additionalInfo": "We deliver customized solutions that integrate renewable energy systems with smart technologies for optimal performance.",
+      "mainImage": "/assets/images/service/comm1.jpg",
+      "detailImage": "/assets/images/service/comm3.jpg",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#248223\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-factory\"><path d=\"M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z\"/><path d=\"M17 18h1\"/><path d=\"M12 18h1\"/><path d=\"M7 18h1\"/></svg>",
+      "features": [
+        "Energy Auditing",
+        "Load Management",
+        "Cost Optimization",
+        "ESG Compliance"
+      ],
+      "link": "/services/business-development/",
+      "buttonText": "Explore Business Development Services"
+    },
+    {
+      "id": "cooking",
+      "tabTitle": "Clean Cooking Solutions",
+      "title": "Clean Cooking Solutions",
+      "description": "Our clean cooking solutions promote health and environmental sustainability while reducing energy costs for households and communities.",
+      "additionalInfo": "We provide efficient, smoke-free cooking technologies that improve indoor air quality and reduce environmental impact.",
+      "mainImage": "/assets/images/service/cook.jpg",
+      "detailImage": "/assets/images/service/burn.jpg",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#248223\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-cooking-pot\"><path d=\"M2 12h20\"/><path d=\"M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8\"/><path d=\"m4 8 16-4\"/><path d=\"m8.86 6.78-.45-1.81a2 2 0 0 1 1.45-2.43l1.94-.48a2 2 0 0 1 2.43 1.46l.45 1.8\"/></svg>",
+      "features": [
+        "Electric Cooking",
+        "Biogas Systems",
+        "Energy Efficiency",
+        "Community Programs"
+      ],
+      "link": "/services/energy-efficiency/",
+      "buttonText": "Explore Energy Efficiency Services"
+    }
+  ]
+}

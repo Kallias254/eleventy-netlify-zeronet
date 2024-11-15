@@ -2,8 +2,8 @@
 layout: layouts/service-details.njk
 title: "E-mobility and E-charging"
 description: "Comprehensive electric vehicle charging infrastructure and mobility solutions."
-featured_image: "/assets/images/service/09.jpg"
-benefits_image: "/assets/images/service/10.jpg"
+featured_image: "/assets/images/service/charge-elec.jpg"
+benefits_image: "/assets/images/service/echarging.jpg"
 permalink: /services/e-mobility-charging/
 eleventyNavigation:
   parent: Services
@@ -28,5 +28,5 @@ contact_info:
   email: "info@zeronetcleanenergy.com"
   phone: "(+256) 771 326 180"
   address: "Nakasero I. Fairway, Kampala UG"
-  hours: "Mon - Sat 8.00 - 18.00. Sunday CLOSED"
+  hours: "Mon - Fri 8 AM - 6 PM. Saturday 9 AM - 2 PM"
 ---

@@ -14818,6 +14818,13 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
     display: none;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .main-haeder-wrapper-h2 .actions-area .menu-btn {
+    display: none;
+  }
+}
+
 .main-haeder-wrapper-h2 .actions-area .menu-btn {
   cursor: pointer;
   margin-left: 30px;
@@ -21699,7 +21706,7 @@ p {
 
 .single-solari-service-start {
   padding: 30px;
-  background-image: url(../images/service/20.png);
+  background-image: url(../images/service/20.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21713,13 +21720,13 @@ p {
   box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.1);
 }
 .single-solari-service-start.two {
-  background-image: url(../images/service/29.png);
+  background-image: url(../images/service/29.jpg);
 }
 .single-solari-service-start.three {
-  background-image: url(../images/service/30.png);
+  background-image: url(../images/service/30.jpg);
 }
 .single-solari-service-start.four {
-  background-image: url(../images/service/31.png);
+  background-image: url(../images/service/31.jpg);
 }
 .single-solari-service-start:hover .icon-area {
   border: 1px solid transparent;

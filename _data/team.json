@@ -9,7 +9,7 @@
       "name": "Paul Lopusingiro",
       "role": "Chief Executive Officer",
       "image": "assets/images/team/17.png",
-      "detailsUrl": "team-details.html",
+      "detailsUrl": "#",
       "socialLinks": [
         {
           "platform": "linkedin",
@@ -21,7 +21,7 @@
         },
         {
           "platform": "envelope",
-          "url": "mailto:example@email.com"
+          "url": "mailto:ceo@zeronetcleanenergy.com"
         }
       ]
     },
@@ -29,7 +29,7 @@
       "name": "To be filled",
       "role": "Finance Director",
       "image": "assets/images/team/18.png",
-      "detailsUrl": "team-details.html",
+      "detailsUrl": "#",
       "socialLinks": [
         {
           "platform": "linkedin",
@@ -47,9 +47,9 @@
     },
     {
       "name": "To be filled",
-      "role": "Technical Director",
+      "role": "Software Development Manager",
       "image": "assets/images/team/19.png",
-      "detailsUrl": "team-details.html",
+      "detailsUrl": "#",
       "socialLinks": [
         {
           "platform": "linkedin",
@@ -69,7 +69,7 @@
       "name": "To be filled",
       "role": "Business Development Director",
       "image": "assets/images/team/20.png",
-      "detailsUrl": "team-details.html",
+      "detailsUrl": "#",
       "socialLinks": [
         {
           "platform": "linkedin",

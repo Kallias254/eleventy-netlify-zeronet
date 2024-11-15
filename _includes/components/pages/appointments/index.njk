@@ -22,6 +22,9 @@
                         data-netlify="true"
                         class="appoinment-form mt--40">
                         <input type="hidden" name="form-name" value="appointment">
+                        <!-- Redirect to Thank You page after form submission -->
+                        <input type="hidden" name="redirect" value="/thank-you/" />
+
                         <div class="input-half-wrapper">
                             <div class="single-input">
                                 <input type="text" name="name" placeholder="Your Name" required>
@@ -44,7 +47,8 @@
                                     name="date"
                                     id="datepicker"
                                     class="calendar"
-                                    required>
+                                    required
+                                    autocomplete="off">
                             </div>
                             <div class="single-input">
                                 <input

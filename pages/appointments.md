@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Appointments
-section: book
+section: appointments
 pageType: appointments
 metaDescription: Book a consultation with our solar energy experts
 permalink: /appointments/

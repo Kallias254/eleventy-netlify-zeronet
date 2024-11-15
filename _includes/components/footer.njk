@@ -40,7 +40,7 @@
                                 <div class="contact-info">
                                     <p>Office Address</p>
                                     <a href="{{ metadata.footer.contact.address.maps_url }}" target="_blank">
-                                        {{ metadata.footer.contact.address.line1 }}, {{ metadata.footer.contact.address.line2 }}
+                                        {{ metadata.footer.contact.address.line1 }} {{ metadata.footer.contact.address.line2 }}
                                     </a>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                 <ul>
                                     {% for platform, url in metadata.footer.social %}
                                     <li>
-                                        <a href="{{ url }}">
+                                        <a href="{{ url }}" target="_blank" >
                                             <i class="fa-brands fa-{{ platform }}"></i>
                                         </a>
                                     </li>
@@ -95,43 +95,43 @@
 
 
 
-                    <div class="single-footer-component">
+<div class="single-footer-component">
     <div class="title-area">
-        <h5 class="title">What We Do</h5>
+        <h5 class="title">Solutions</h5>
     </div>
     <div class="body">
         <div class="pages-footer">
             <ul>
-                {% for service in services.services %}
+                {% for solution in solutions.items %}
                 <li>
-                    <a href="service-details.html">
+                    <a href="{{ solution.link }}">
                         <i class="fa-solid fa-arrow-right"></i>
-                        <p>{{ service.title }}</p>
+                        <p>{{ solution.tabTitle }}</p>
                     </a>
                 </li>
                 {% endfor %}
             </ul>
         </div>
     </div>
-</div>
-
-                    <!-- Contact section remains the same as it uses the same data from above -->
-                    {% include "components/footer-contact.njk" %}
+</div>                    <!-- Contact section remains the same as it uses the same data from above -->
+                    {# include "components/footer-contact.njk" #}
                 </div>
             </div>
         </div>
 
-    <div class="row pb--20 pt--20 border-top-copyright">
-        <div class="col-lg-12">
-            <div class="copyright-area-one text-center">
-                <div class="left">
-                    <p>Copyright {% year %} All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
+
+
+
+
+<div class="row pb--20 pt--20 border-top-copyright">
+    <div class="col-lg-12">
+        <p class="company-info">
+            ZERONET CLEAN ENERGY LIMITED is registered under the Uganda Registration Services Bureau (URSB),
+            Registration Number: <strong>80034575413440</strong>. <br>
+            Copyright {% year %} All Rights Reserved.
+        </p>
     </div>
-   </div>
-
+</div>
     <div class="footer-one-left-right-image">
         <img class="one" src="/assets/images/footer/08.png" alt="">
         <img class="two" src="/assets/images/footer/09.png" alt="">

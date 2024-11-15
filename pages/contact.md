@@ -19,7 +19,7 @@ contactCards:
     type: phone
     image: /assets/images/footer/04.jpg
   - title: Second Office
-    value: (+256) 771 326 181
+    value: (+256) 782 031 406
     type: phone
     image: /assets/images/footer/05.jpg
   - title: Go for location

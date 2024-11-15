@@ -24,3 +24,96 @@
         </div>
     </div>
 </div>
+
+<!-- our service area start -->
+<div class="our-service-area-start rts-section-gap bg-lighten">
+    <div class="container">
+        <!-- Maps to top-level fields in solutions.json -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="solari-title-area-three text-center">
+                    <span class="pre-title skew-up">{{ solutions.preTitle }}</span>
+                    <h2 class="title skew-up">{{ solutions.title }}</h2>
+                    <p class="disc skew-up">{{ solutions.description | safe }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs using solutions.items array -->
+        <div class="row mt--60">
+            <div class="col-lg-12">
+                <div class="tab-area-service-solari-3">
+                    <!-- Tab headers -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        {% for solution in solutions.items %}
+                        <li class="nav-item" role="presentation">
+                            <div class="nav-link {% if loop.first %}active{% endif %}"
+                                 id="{{ solution.id }}-tab"
+                                 data-bs-toggle="tab"
+                                 data-bs-target="#{{ solution.id }}"
+                                 role="tab"
+                                 aria-controls="{{ solution.id }}"
+                                 aria-selected="{% if loop.first %}true{% else %}false{% endif %}">
+                                <div class="icon">
+                                    {{ solution.icon | safe }}
+                                </div>
+                                <p>{{ solution.tabTitle }}</p>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                    <!-- Tab content panels -->
+                    <div class="tab-content tab-content-solari-service-m mt--60" id="myTabContent">
+                        {% for solution in solutions.items %}
+                        <div class="tab-pane fade {% if loop.first %}show active{% endif %}"
+                             id="{{ solution.id }}"
+                             role="tabpanel"
+                             aria-labelledby="{{ solution.id }}-tab">
+                            <div class="row">
+                                <!-- Main image -->
+                                <div class="col-lg-6 {% if loop.index == 2 or loop.index == 4 %}order-2{% endif %}">
+                                    <div class="thumbnail-area-left-image">
+                                        <img src="{{ solution.mainImage }}" alt="{{ solution.title }}">
+                                    </div>
+                                </div>
+
+                                <!-- Content and features -->
+                                <div class="col-lg-6 pl--60 pl_md--20 pl_sm--10 mt_sm--50 {% if loop.index == 2 or loop.index == 4 %}order-1{% endif %}">
+                                    <div class="inner-content-service-right-solari">
+                                        <h3 class="title">{{ solution.title }}</h3>
+                                        <p class="disc">{{ solution.description }}</p>
+                                        <p class="disc">{{ solution.additionalInfo }}</p>
+                                    </div>
+                                    <div class="row">
+                                        <!-- Detail image -->
+                                        <div class="col-lg-6">
+                                            <div class="thumbnail-img-sm-service">
+                                                <img src="{{ solution.detailImage }}" alt="{{ solution.title }} Details">
+                                            </div>
+                                        </div>
+                                        <!-- Features list -->
+                                        <div class="col-lg-6">
+                                            <div class="service-singlew-main-wrapper-sm">
+                                                {% for feature in solution.features %}
+                                                <div class="single-service">
+                                                    <img src="/assets/images/service/dt.png" alt="service">
+                                                    <p>{{ feature }}</p>
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                        <!-- CTA button -->
+                                        <a href="{{ solution.link }}" class="rts-btn btn-primary">{{ solution.buttonText }}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- our service area end -->
