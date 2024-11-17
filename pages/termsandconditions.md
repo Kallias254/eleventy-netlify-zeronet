@@ -12,11 +12,17 @@ Last updated November 15, 2024
 AGREEMENT TO OUR LEGAL TERMS
 
 We are ZERONET CLEAN ENERGY, doing business as ZERONET ('Company', 'we', 'us', or 'our'), a company registered in Uganda at Nakasero 1, Fairway Kampala, Uganda, Kampala, Central Division.
+
 We operate the website zeronetcleanenergy.com/ (the 'Site'), as well as any other related products and services that refer or link to these legal terms (the 'Legal Terms') (collectively, the 'Services').
+
 ZERONET ("the Website") is a digital platform owned and operated by ZERONET CLEAN ENERGY LIMITED that provides information and services related to renewable energy solutions, including solar panel installations, wind turbine services, hydropower solutions, and sustainable energy consulting. The Website serves as an informational and commercial platform where users can learn about renewable energy technologies, request consultations, schedule services, and engage with our energy solutions experts. Through our digital interface, we facilitate the connection between sustainable energy solutions and those seeking to implement them. All content on this Website, including but not limited to text, graphics, logos, images, and software, is the property of ZERONET CLEAN ENERGY LIMITED or its content suppliers and is protected by international copyright laws.
+
 You can contact us by phone at (+256) 771 326 180, email at info@zeronetcleanenergy.com, or by mail to Nakasero 1, Fairway Kampala, Uganda, Kampala, Central Division, Uganda.
+
 These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ('you'), and ZERONET CLEAN ENERGY, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
+
 Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms at any time and for any reason. We will alert you about any changes by updating the 'Last updated' date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted.
+
 The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services.
 We recommend that you print a copy of these Legal Terms for your records.
 

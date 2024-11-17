@@ -11,7 +11,9 @@ section: page
   {% include pageTemplate %}
 {% endif %}
 
-{# Main content from markdown files #}
+{# Main content from markdown files, skipped for specific pages #}
 <main class="page-content">
-  {{ content | safe }}
+  {% if page.url != "/terms-and-conditions/" and page.url != "/privacy-policy/" %}
+    {{ content | safe }}
+  {% endif %}
 </main>
