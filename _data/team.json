@@ -7,7 +7,7 @@
   "members": [
     {
       "name": "Paul Lopusingiro",
-      "role": "Chief Executive Officer",
+      "role": "CEO & Founder",
       "image": "assets/images/team/17.png",
       "detailsUrl": "#",
       "socialLinks": [
@@ -26,28 +26,8 @@
       ]
     },
     {
-      "name": "To be filled",
-      "role": "Finance Director",
-      "image": "assets/images/team/18.png",
-      "detailsUrl": "#",
-      "socialLinks": [
-        {
-          "platform": "linkedin",
-          "url": "#"
-        },
-        {
-          "platform": "twitter",
-          "url": "#"
-        },
-        {
-          "platform": "envelope",
-          "url": "mailto:example@email.com"
-        }
-      ]
-    },
-    {
-      "name": "To be filled",
-      "role": "Software Development Manager",
+      "name": "Joseph Miseda",
+      "role": "Software Developer",
       "image": "assets/images/team/19.png",
       "detailsUrl": "#",
       "socialLinks": [
@@ -61,13 +41,13 @@
         },
         {
           "platform": "envelope",
-          "url": "mailto:example@email.com"
+          "url": "mailto:misedajoseph@gmail.com"
         }
       ]
     },
     {
       "name": "To be filled",
-      "role": "Business Development Director",
+      "role": "Business Development & Administation",
       "image": "assets/images/team/20.png",
       "detailsUrl": "#",
       "socialLinks": [

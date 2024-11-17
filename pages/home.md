@@ -75,28 +75,39 @@ workingProcessSection:
   title: Project Planning
   processSlides:
     - image: "assets/images/project/12.jpg"
-      title: "Research & Analysis"
+      title: "Research, Analysis & Audit"
       label: "STEP 01"
+      description: "We conduct thorough research, analysis, and auditing to understand your energy needs and site-specific conditions. This foundational step ensures a data-driven approach to project planning."
+
+    - image: "assets/images/project/scaleslaw.jpg"
+      title: "Agreement & Legal Considerations"
+      label: "STEP 02"
+      description: "We move forward with securing agreements, covering legal aspects, permits, and ensuring compliance with regulatory requirements, setting the stage for a successful project."
 
     - image: "assets/images/project/projectdesign.jpg"
       title: "Project Design"
-      label: "STEP 02"
-
-    - image: "assets/images/project/material.jpg"
-      title: "Material Selection"
       label: "STEP 03"
+      description: "Our design team crafts a customized project plan, focusing on maximizing efficiency and sustainability, with detailed layouts and system configurations tailored to your site."
 
-    - image: "assets/images/project/planning.jpg"
-      title: "Installation Planning"
+    - image: "assets/images/project/groundbreaking.jpg"
+      title: "Groundbreaking & Installation Planning"
       label: "STEP 04"
+      description: "We prepare for installation with meticulous planning and groundbreaking activities, ensuring a smooth transition into the implementation phase."
 
     - image: "assets/images/project/implement.jpg"
       title: "Implementation"
       label: "STEP 05"
+      description: "Our team executes the project with precision, managing the installation process and ensuring the highest standards of quality and safety."
 
     - image: "assets/images/project/comissioning.jpg"
       title: "Commissioning & Handover"
       label: "STEP 06"
+      description: "We commission the system, perform rigorous testing, and hand over a fully operational project, ready to deliver clean energy."
+
+    - image: "assets/images/project/oandm.jpg"
+      title: "Operations, Maintenance & Asset Management"
+      label: "STEP 07"
+      description: "ZeroNet ensures the optimal performance and longevity of your investment with proactive operations, maintenance, and asset management services. Our team provides preventive care, performance monitoring, and rapid response to maximize efficiency."
 
 faqSection:
   preTitle: Questions
