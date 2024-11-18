@@ -19,16 +19,16 @@
                     <form
                         name="appointment"
                         method="POST"
+                        action="/thank-you/"
                         data-netlify="true"
                         class="appoinment-form mt--40">
-                        <!-- Hidden input for form name -->
                         <input type="hidden" name="form-name" value="appointment">
-                        <!-- Hidden input for redirect URL -->
-                        <input type="hidden" name="redirect" value="/thank-you/" />
-                        <!-- Honeypot bot field for spam prevention -->
-                        <p style="display: none;">
+
+                        <!-- Honeypot field for spam prevention -->
+                        <p style="display:none;">
                             <label>Don’t fill this out if you're human: <input name="bot-field"></label>
                         </p>
+
                         <div class="input-half-wrapper">
                             <div class="single-input">
                                 <input type="text" name="name" placeholder="Your Name" required>
