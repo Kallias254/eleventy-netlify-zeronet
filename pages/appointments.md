@@ -15,6 +15,8 @@ serviceOptions:
   value: partnership
 - text: Consultancy Services
   value: consultancy
+- text: Energy Management & Audit
+  value: energy
 testimonials:
   title: What Customers Says
   subtitle: Quality Handyman Solution

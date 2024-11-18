@@ -21,14 +21,17 @@
                         method="POST"
                         action="/thank-you/"
                         data-netlify="true"
+                        netlify-honeypot="bot-field"
                         class="appoinment-form mt--40">
+
+                        <!-- Hidden fields for Netlify form handling -->
                         <input type="hidden" name="form-name" value="appointment">
+                        <input type="hidden" name="redirect" value="/thank-you/">
+                        <div hidden>
+                            <input name="bot-field" />
+                        </div>
 
-                        <!-- Honeypot field for spam prevention -->
-                        <p style="display:none;">
-                            <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-                        </p>
-
+                        <!-- Name and Email wrapper -->
                         <div class="input-half-wrapper">
                             <div class="single-input">
                                 <input type="text" name="name" placeholder="Your Name" required>
@@ -37,12 +40,21 @@
                                 <input type="email" name="email" placeholder="Email Address" required>
                             </div>
                         </div>
+
+
+
+             <!-- Service selection -->
                         <select name="service" required>
-                            <option value="">Select Service</option>
+                            <option value="">Reason for appointment</option>
                             {% for option in serviceOptions %}
                             <option value="{{ option.value }}">{{ option.text }}</option>
                             {% endfor %}
                         </select>
+
+
+
+
+                        <!-- Date and Time wrapper -->
                         <div class="input-half-wrapper mt--25 mb--30">
                             <div class="single-input">
                                 <input
@@ -65,6 +77,19 @@
                                     required>
                             </div>
                         </div>
+
+                        <div class="input-half-wrapper">
+    <div class="single-input" style="width: 100%">
+        <textarea
+            name="message"
+            placeholder="Type Your Message (optional)"
+            maxlength="300"
+            style="height: 150px; margin-bottom: 25px; padding-top: 20px; padding: 30px; border-radius: 33px; border: 1px solid #EAEAEA; box-shadow: 0px 4px 47px rgba(0, 0, 0, 0.01); background: #FFFFFF;"
+        ></textarea>
+    </div>
+</div>
+
+
                         <button type="submit" class="rts-btn btn-primary">SUBMIT MESSAGE</button>
                     </form>
                 </div>

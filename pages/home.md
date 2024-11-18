@@ -79,18 +79,18 @@ workingProcessSection:
       label: "STEP 01"
       description: "We conduct thorough research, analysis, and auditing to understand your energy needs and site-specific conditions. This foundational step ensures a data-driven approach to project planning."
 
-    - image: "assets/images/project/scaleslaw.jpg"
-      title: "Agreement & Legal Considerations"
+    - image: "assets/images/project/scale.jpg"
+      title: "Legal Considerations"
       label: "STEP 02"
       description: "We move forward with securing agreements, covering legal aspects, permits, and ensuring compliance with regulatory requirements, setting the stage for a successful project."
 
     - image: "assets/images/project/projectdesign.jpg"
-      title: "Project Design"
+      title: "Project Design & Planning"
       label: "STEP 03"
       description: "Our design team crafts a customized project plan, focusing on maximizing efficiency and sustainability, with detailed layouts and system configurations tailored to your site."
 
-    - image: "assets/images/project/groundbreaking.jpg"
-      title: "Groundbreaking & Installation Planning"
+    - image: "assets/images/project/ground.jpeg"
+      title: "Groundbreaking & Installation"
       label: "STEP 04"
       description: "We prepare for installation with meticulous planning and groundbreaking activities, ensuring a smooth transition into the implementation phase."
 
@@ -104,8 +104,8 @@ workingProcessSection:
       label: "STEP 06"
       description: "We commission the system, perform rigorous testing, and hand over a fully operational project, ready to deliver clean energy."
 
-    - image: "assets/images/project/oandm.jpg"
-      title: "Operations, Maintenance & Asset Management"
+    - image: "assets/images/project/asset.jpg"
+      title: "Operations & Maintenance"
       label: "STEP 07"
       description: "ZeroNet ensures the optimal performance and longevity of your investment with proactive operations, maintenance, and asset management services. Our team provides preventive care, performance monitoring, and rapid response to maximize efficiency."
 

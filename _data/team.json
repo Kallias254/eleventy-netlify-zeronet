@@ -8,7 +8,7 @@
     {
       "name": "Paul Lopusingiro",
       "role": "CEO & Founder",
-      "image": "assets/images/team/17.png",
+      "image": "assets/images/team/ceo.jpg",
       "detailsUrl": "#",
       "socialLinks": [
         {
@@ -25,10 +25,11 @@
         }
       ]
     },
+
     {
       "name": "Joseph Miseda",
       "role": "Software Developer",
-      "image": "assets/images/team/19.png",
+      "image": "assets/images/team/sw.jpg",
       "detailsUrl": "#",
       "socialLinks": [
         {
@@ -42,26 +43,6 @@
         {
           "platform": "envelope",
           "url": "mailto:misedajoseph@gmail.com"
-        }
-      ]
-    },
-    {
-      "name": "To be filled",
-      "role": "Business Development & Administation",
-      "image": "assets/images/team/20.png",
-      "detailsUrl": "#",
-      "socialLinks": [
-        {
-          "platform": "linkedin",
-          "url": "#"
-        },
-        {
-          "platform": "twitter",
-          "url": "#"
-        },
-        {
-          "platform": "envelope",
-          "url": "mailto:example@email.com"
         }
       ]
     }
