@@ -48,7 +48,7 @@ tabs:
 
   - title: Our Goal
     description: "We are building a future where clean energy drives Africa's sustainable development. With clear objectives and a strategic roadmap, we aim to expand our impact across Sub-Saharan Africa while maintaining our commitment to excellence and sustainability."
-    image: "/assets/images/about/21.jpg"
+    image: "/assets/images/about/third.jpg"
     altText: "Our Goal"
     checkList:
       - Market Leadership

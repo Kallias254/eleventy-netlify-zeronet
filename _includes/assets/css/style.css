@@ -16535,17 +16535,17 @@ nav ul li a {
 }
 
 .banner-two-main-wrapper-solaric {
-  background-image: url(../images/banner/08.jpg);
+  background-image: url(../images/banner/farm.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 825px;
 }
 .banner-two-main-wrapper-solaric.two {
-  background-image: url(../images/banner/13.jpg);
+  background-image: url(../images/banner/wind.jpg);
 }
 .banner-two-main-wrapper-solaric.three {
-  background-image: url(../images/banner/14.jpg);
+  background-image: url(../images/banner/turbines.jpg);
 }
 
 .banner-solari-2-content span {

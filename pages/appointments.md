@@ -10,13 +10,13 @@ experience:
   text: Years Experience
 serviceOptions:
 - text: Business Inquiries
-  value: business
+  value: Business inquiry
 - text: Partnership Opportunities
-  value: partnership
+  value: Considering partnership opportunities
 - text: Consultancy Services
-  value: consultancy
+  value: Seeking consultancy services
 - text: Energy Management & Audit
-  value: energy
+  value: Energy management & audit
 testimonials:
   title: What Customers Says
   subtitle: Quality Handyman Solution
