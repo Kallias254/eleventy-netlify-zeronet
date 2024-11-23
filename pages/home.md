@@ -1,6 +1,7 @@
 ---
 layout: layouts/home.njk
-title: Home
+title: Welcome to ZERONET Clean Energy
+metaDescription: ZERONET Clean Energy is a leading renewable energy provider in Sub-Saharan Africa, offering cost-effective solar and wind energy solutions to power sustainable growth.
 date: 2023-10-26T00:00:00.000Z
 permalink: /
 eleventyNavigation:

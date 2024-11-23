@@ -4,25 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta Tags -->
-    <title>{{ title or metadata.title }}</title>
+
+    <!-- Primary Meta Tags -->
+    <title>{{ title or metadata.title }} | ZERONET Clean Energy</title>
+    <meta name="title" content="{{ title or metadata.title }} | ZERONET Clean Energy">
     <meta name="description" content="{{ metaDescription or metadata.description }}">
+    <meta name="author" content="ZERONET Clean Energy">
+    <meta name="keywords" content="clean energy, renewable energy, solar power, wind energy, Uganda, Sub-Saharan Africa, sustainable energy, green power">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ title or metadata.title }} | ZERONET Clean Energy">
+    <meta property="og:description" content="{{ metaDescription or metadata.description }}">
+    <meta property="og:image" content="{{ metadata.url }}{{ metadata.defaultSocialImage }}">
+    <meta property="og:site_name" content="ZERONET Clean Energy">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ metadata.url }}{{ page.url }}">
+    <meta name="twitter:title" content="{{ title or metadata.title }} | ZERONET Clean Energy">
+    <meta name="twitter:description" content="{{ metaDescription or metadata.description }}">
+    <meta name="twitter:image" content="{{ metadata.url }}{{ metadata.defaultSocialImage }}">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
+
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/fav.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "{{ metadata.url }}/#organization",
+      "name": "ZERONET Clean Energy",
+      "alternateName": "ZERONET",
+      "url": "{{ metadata.url }}",
+      "logo": "{{ metadata.url }}/assets/images/logo/logo-02.png",
+      "description": "{{ metadata.description }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nakasero 1, Fairway",
+        "addressLocality": "Kampala",
+        "addressCountry": "UG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+256771326180",
+        "contactType": "sales",
+        "email": "info@zeronetcleanenergy.com",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/zeronet-clean-energy-ltd/"
+      ]
+    }
+    </script>
+
+    {% if templateName == 'service' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "{{ title }}",
+      "provider": {
+        "@type": "Organization",
+        "name": "ZERONET Clean Energy"
+      },
+      "description": "{{ metaDescription }}",
+      "url": "{{ metadata.url }}{{ page.url }}"
+    }
+    </script>
+    {% endif %}
+
     <!-- Plugin CSS -->
+    <link rel="preload" href="/assets/css/plugins/fontawesome-6.css" as="style">
+    <link rel="preload" href="/assets/css/plugins/swiper.css" as="style">
     <link rel="stylesheet" href="/assets/css/plugins/fontawesome-6.css">
     <link rel="stylesheet" href="/assets/css/plugins/swiper.css">
     <link rel="stylesheet" href="/assets/css/plugins/unicons.css">
     <link rel="stylesheet" href="/assets/css/plugins/metismenu.css">
     <link rel="stylesheet" href="/assets/css/vendor/animate.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
-
 </head>
 <body class="index-two onepage">
-
     <!-- Header Area -->
     {% include "components/header.njk" %}
 
@@ -48,15 +123,15 @@
     </div>
 
     <!-- Search Input -->
-    <div class="search-input-area">
+    <div class="search-input-area" role="search">
         <div class="container">
             <div class="search-input-inner">
                 <div class="input-div">
-                    <!-- Search form content -->
+                    <input type="text" placeholder="Search..." aria-label="Search">
                 </div>
             </div>
         </div>
-        <div id="close" class="search-close-icon"></div>
+        <button id="close" class="search-close-icon" aria-label="Close search"></button>
     </div>
 
     <div id="anywhere-home"></div>
@@ -64,23 +139,22 @@
     <!-- Footer Area -->
     {% include "components/footer.njk" %}
 
-    <!-- jquery js -->
-    <script src="/assets/js/plugins/jquery.min.js"></script>
-    <script src="/assets/js/vendor/jqueryui.js"></script>
-    <script src="/assets/js/plugins/counter-up.js"></script>
-    <script src="/assets/js/plugins/swiper.js"></script>
-    <script src="/assets/js/plugins/metismenu.js"></script>
-    <script src="/assets/js/vendor/waypoint.js"></script>
-    <script src="/assets/js/vendor/waw.js"></script>
-    <script src="/assets/js/plugins/gsap.min.js"></script>
-    <script src="/assets/js/plugins/scrolltigger.js"></script>
-    <script src="/assets/js/vendor/split-text.js"></script>
-    <script src="/assets/js/vendor/contact.form.js"></script>
-    <script src="/assets/js/vendor/split-type.js"></script>
-    <script src="/assets/js/plugins/jquery-timepicker.js"></script>
-    <script src="/assets/js/plugins/bootstrap.min.js"></script>
-    <!-- Main JS -->
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/custom.js"></script>
+    <!-- Scripts -->
+    <script defer src="/assets/js/plugins/jquery.min.js"></script>
+    <script defer src="/assets/js/vendor/jqueryui.js"></script>
+    <script defer src="/assets/js/plugins/counter-up.js"></script>
+    <script defer src="/assets/js/plugins/swiper.js"></script>
+    <script defer src="/assets/js/plugins/metismenu.js"></script>
+    <script defer src="/assets/js/vendor/waypoint.js"></script>
+    <script defer src="/assets/js/vendor/waw.js"></script>
+    <script defer src="/assets/js/plugins/gsap.min.js"></script>
+    <script defer src="/assets/js/plugins/scrolltigger.js"></script>
+    <script defer src="/assets/js/vendor/split-text.js"></script>
+    <script defer src="/assets/js/vendor/contact.form.js"></script>
+    <script defer src="/assets/js/vendor/split-type.js"></script>
+    <script defer src="/assets/js/plugins/jquery-timepicker.js"></script>
+    <script defer src="/assets/js/plugins/bootstrap.min.js"></script>
+    <script defer src="/assets/js/main.js"></script>
+    <script defer src="/assets/js/custom.js"></script>
 </body>
 </html>

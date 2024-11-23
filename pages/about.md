@@ -3,7 +3,7 @@ layout: layouts/page.njk
 title: About Us
 section: about
 pageType: about
-metaDescription: Learn about our solar energy company...
+metaDescription: Learn about ZERONET Clean Energy, a leading provider of solar energy solutions in Sub-Saharan Africa. Discover our mission, vision, and commitment to renewable energy.
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/
 eleventyNavigation:

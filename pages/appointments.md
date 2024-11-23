@@ -3,7 +3,7 @@ layout: layouts/page.njk
 title: Appointments
 section: appointments
 pageType: appointments
-metaDescription: Book a consultation with our solar energy experts
+metaDescription: Book a consultation with our solar energy experts.
 permalink: /appointments/
 experience:
   years: 3+
