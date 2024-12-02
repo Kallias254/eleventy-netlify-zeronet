@@ -102,13 +102,9 @@
     {% include "components/header.njk" %}
 
     <!-- Main Content -->
-<main>
-    <section style="text-align:center; padding: 50px;">
-        <h1>Website Temporarily Unavailable</h1>
-        <p>We are currently resolving an issue. Please check back later.</p>
-    </section>
-</main>
-
+    <main>
+        {{ content | safe }}
+    </main>
 
     <!-- Progress Wrap -->
     <div class="progress-wrap">
@@ -162,6 +158,3 @@
     <script defer src="/assets/js/custom.js"></script>
 </body>
 </html>
-
-
-
