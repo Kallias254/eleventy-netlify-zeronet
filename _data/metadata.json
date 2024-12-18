@@ -1,12 +1,12 @@
 {
   "title": "ZERONET Clean Energy",
   "description": "Powering a Sustainable Future in Sub-Saharan Africa through innovative renewable energy solutions.",
-  "url": "https://zeronet.netlify.app",
+  "url": "https://zeronetcleanenergy.com/",
   "author": {
     "name": "ZeroNet Clean Energy",
     "email": "info@zeronetcleanenergy.com"
   },
-  "defaultSocialImage": "/assets/images/default-social.jpg",
+  "defaultSocialImage": "/assets/images/logo/logo-01.jpg",
   "footer": {
     "logo": "/assets/images/logo/logo-02.png",
     "about": "Powering Progress, Energizing Sustainability",
