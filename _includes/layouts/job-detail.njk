@@ -1,0 +1,74 @@
+---
+layout: layouts/page.njk
+section: careers
+---
+<div class="job-detail-section">
+    <div class="container">
+        <div class="job-header">
+            <h1>{{ title }}</h1>
+            <div class="job-meta">
+                <span><i class="fas fa-map-marker-alt"></i> {{ location }}</span>
+                <span><i class="fas fa-calendar"></i> Apply by: {{ deadline }}</span>
+                <span class="share-text">Share this job:</span>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ title | url }}&summary=Job Opportunity: {{ title | url }}&source=ZERONET CLEAN ENERGY" target="_blank" class="linkedin-share">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="job-content">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="job-description">
+                        <h3>About the Role</h3>
+                        <p>{{ description }}</p>
+
+                        <h3>Key Responsibilities</h3>
+                        <ul>
+                            {% for responsibility in key_responsibilities %}
+                            <li>{{ responsibility }}</li>
+                            {% endfor %}
+                        </ul>
+
+                        <h3>Requirements</h3>
+                        <ul>
+                            {% for requirement in requirements %}
+                            <li>{{ requirement }}</li>
+                            {% endfor %}
+                        </ul>
+
+                        {% if closing_text %}
+                        <p class="closing-text">{{ closing_text }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="application-form-wrapper">
+                        <h3>Apply Now</h3>
+                        <form name="job-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+                            <input type="hidden" name="job-title" value="{{ title }}">
+                            <div hidden><input name="bot-field"></div>
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Upload CV (PDF only)</label>
+                                <input type="file" name="cv" accept=".pdf" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="cover-letter" placeholder="Cover Letter" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="rts-btn btn-primary">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

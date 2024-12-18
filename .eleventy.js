@@ -3,6 +3,7 @@ const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-js");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 module.exports = function (eleventyConfig) {
   // Plugins
@@ -23,6 +24,40 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("machineDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
+  });
+
+  eleventyConfig.addFilter("absoluteUrl", (url, base) => {
+    try {
+      return new URL(url, base).toString();
+    } catch (e) {
+      return url;
+    }
+  });
+  /*sitemap plugin*/
+
+  module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(pluginSitemap, {
+      sitemap: {
+        hostname: "https://zeronetcleanenergy.com/", // Replace with your site's URL
+      },
+    });
+
+    return {
+      dir: {
+        input: "eleventy-netlify-zeronet", // Adjust this based on your input folder
+        output: "_site", // Adjust for your build output folder
+      },
+    };
+  };
+
+  // Create a collection for job postings
+  eleventyConfig.addCollection("jobs", function (collectionApi) {
+    return collectionApi.getFilteredByTag("jobs");
+  });
+
+  // Add your site URL here
+  eleventyConfig.addGlobalData("site", {
+    url: "https://zeronetcleanenergy.com", // Replace with your actual domain
   });
 
   // Minification Filters

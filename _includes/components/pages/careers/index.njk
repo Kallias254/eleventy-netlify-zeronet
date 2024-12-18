@@ -1,0 +1,29 @@
+<div class="careers-section">
+    <div class="container">
+        <div class="current-opportunities">
+            <h2>Current Opportunities</h2>
+            {% for job in collections.jobs %}
+            <div class="job-card">
+                <h3>{{ job.data.title }}</h3>
+                <div class="job-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> {{ job.data.location }}</span>
+                    <span><i class="fas fa-calendar"></i> Apply by: {{ job.data.deadline }}</span>
+                                    <span class="share-text">Share this job:</span>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ job.url }}&title={{ job.data.title }}&summary=Job Opportunity: {{ job.data.title }}&source=ZERONET CLEAN ENERGY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="linkedin-share">
+                <i class="fab fa-linkedin"></i>
+</a>
+                </div>
+                <div class="job-description">
+                    {{ job.data.description }}
+                </div>
+                <a href="/careers/business-development-officer" class="view-details-btn">
+                    View Details & Apply
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
