@@ -119,6 +119,7 @@
     align-items: center;
     gap: 12px;
     margin-top: 20px;
+    flex-wrap: wrap; /* Add this */
 }
 
 .share-text {
@@ -133,6 +134,8 @@
     padding: 8px 12px;
     border-radius: 4px;
     transition: opacity 0.2s;
+    display: inline-block; /* Add this */
+    width: fit-content; /* Add this */
 }
 
 .linkedin-share:hover {
@@ -263,5 +266,14 @@ button[type="submit"]:hover {
 
     .current-opportunities h2 {
         font-size: 32px;
+    }
+
+    .social-share {
+        align-items: flex-start; /* Add this */
+    }
+
+    .share-text {
+        width: 100%; /* Add this */
+        margin-bottom: 5px; /* Add this */
     }
 }

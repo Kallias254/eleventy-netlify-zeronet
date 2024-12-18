@@ -4,7 +4,10 @@
             <h2>Current Opportunities</h2>
             {% for job in collections.jobs %}
             <div class="job-card">
-                <h3>{{ job.data.title }}</h3>
+
+<a href="/careers/business-development-officer">
+  <h3>{{ job.data.title }}</h3>
+</a>
                 <div class="job-meta">
                     <span><i class="fas fa-map-marker-alt"></i> {{ job.data.location }}</span>
                     <span><i class="fas fa-calendar"></i> Apply by: {{ job.data.deadline }}</span>

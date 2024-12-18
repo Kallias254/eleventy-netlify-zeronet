@@ -9,10 +9,12 @@ section: careers
             <div class="job-meta">
                 <span><i class="fas fa-map-marker-alt"></i> {{ location }}</span>
                 <span><i class="fas fa-calendar"></i> Apply by: {{ deadline }}</span>
-                <span class="share-text">Share this job:</span>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ title | url }}&summary=Job Opportunity: {{ title | url }}&source=ZERONET CLEAN ENERGY" target="_blank" class="linkedin-share">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+
+
+                    <span class="share-text">Share this job:</span>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | url | absoluteUrl(metadata.url) }}" target="_blank" class="linkedin-share">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
             </div>
 
         </div>
