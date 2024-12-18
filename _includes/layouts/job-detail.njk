@@ -45,7 +45,17 @@ section: careers
                 <div class="col-lg-5">
                     <div class="application-form-wrapper">
                         <h3>Apply Now</h3>
-                        <form name="job-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+                        <form name="job-application"
+                            method="POST"
+                            data-netlify="true"
+                            netlify-honeypot="bot-field"
+                            enctype="multipart/form-data"
+                            action="/thank-you/">
+
+                            <!-- Add these two hidden fields -->
+                            <input type="hidden" name="form-name" value="job-application">
+                            <input type="hidden" name="redirect" value="/thank-you/">
+
                             <input type="hidden" name="job-title" value="{{ title }}">
                             <div hidden><input name="bot-field"></div>
                             <div class="form-group">
