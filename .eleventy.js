@@ -38,16 +38,16 @@ module.exports = function (eleventyConfig) {
   module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(pluginSitemap, {
       sitemap: {
-        hostname: "https://zeronetcleanenergy.com/", // Replace with your site's URL
+        hostname: "https://zeronetcleanenergy.com", // Replace with your site's URL
       },
     });
 
-    return {
-      dir: {
-        input: "eleventy-netlify-zeronet", // Adjust this based on your input folder
-        output: "_site", // Adjust for your build output folder
-      },
-    };
+    // return {
+    //   dir: {
+    //     input: "eleventy-netlify-zeronet", // Adjust this based on your input folder
+    //     output: "_site", // Adjust for your build output folder
+    //   },
+    // };
   };
 
   // Create a collection for job postings
