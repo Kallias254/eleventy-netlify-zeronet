@@ -8,5 +8,5 @@ date: 2024-12-17
 permalink: /careers/
 eleventyNavigation:
   key: Careers
-  order: 6
+  order: 4
 ---

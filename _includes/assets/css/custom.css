@@ -277,3 +277,83 @@ button[type="submit"]:hover {
         margin-bottom: 5px; /* Add this */
     }
 }
+/*new css*/
+.step-indicator {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.progress-bar {
+    height: 4px;
+    background: var(--border-light);
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    background: var(--primary-green);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+    width: 33.33%;
+}
+
+.step-text {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+.preview-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.preview-item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.preview-item:last-child {
+    border-bottom: none;
+}
+
+.preview-item strong {
+    display: block;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-navigation button {
+    min-width: 120px;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid var(--primary-green);
+    color: var(--primary-green);
+}
+
+.btn-secondary:hover {
+    /* background: var(--border-light); */
+}
+
+/* Add these error handling styles to your existing CSS */
+.form-group .error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+}

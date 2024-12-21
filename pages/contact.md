@@ -8,7 +8,7 @@ date: 2018-01-01
 permalink: /contact/
 eleventyNavigation:
   key: Contact
-  order: 5
+  order: 6
 contactCards:
   - title: Get an email
     value: info@zeronetcleanenergy.com

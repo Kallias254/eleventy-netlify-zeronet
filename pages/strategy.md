@@ -7,7 +7,7 @@ metaDescription: Our comprehensive approach to renewable energy solutions and im
 permalink: /strategy/
 eleventyNavigation:
   key: Strategy
-  order: 4
+  order: 5
 strategyAccordion:
   - title: Environmental Stewardship
     content: "We are committed to leading Sub-Saharan Africa's transition to renewable energy through innovative solutions that significantly reduce carbon emissions while meeting growing energy demands. Our comprehensive approach includes solar PV, wind, hydro, and green hydrogen technologies."

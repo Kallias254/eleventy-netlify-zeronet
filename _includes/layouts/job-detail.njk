@@ -1,6 +1,7 @@
 ---
 layout: layouts/page.njk
 section: careers
+templateName: job-detail
 ---
 <div class="job-detail-section">
     <div class="container">
@@ -9,13 +10,11 @@ section: careers
             <div class="job-meta">
                 <span><i class="fas fa-map-marker-alt"></i> {{ location }}</span>
                 <span><i class="fas fa-calendar"></i> Apply by: {{ deadline }}</span>
-
-                    <span class="share-text">Share this job:</span>
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | url | absoluteUrl(metadata.url) }}" target="_blank" class="linkedin-share">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                <span class="share-text">Share this job:</span>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | url | absoluteUrl(metadata.url) }}" target="_blank" class="linkedin-share">
+                    <i class="fab fa-linkedin"></i>
+                </a>
             </div>
-
         </div>
         <div class="job-content">
             <div class="row">
@@ -23,21 +22,18 @@ section: careers
                     <div class="job-description">
                         <h3>About the Role</h3>
                         <p>{{ description }}</p>
-
                         <h3>Key Responsibilities</h3>
                         <ul>
                             {% for responsibility in key_responsibilities %}
                             <li>{{ responsibility }}</li>
                             {% endfor %}
                         </ul>
-
                         <h3>Requirements</h3>
                         <ul>
                             {% for requirement in requirements %}
                             <li>{{ requirement }}</li>
                             {% endfor %}
                         </ul>
-
                         {% if closing_text %}
                         <p class="closing-text">{{ closing_text }}</p>
                         {% endif %}
@@ -46,35 +42,80 @@ section: careers
                 <div class="col-lg-5">
                     <div class="application-form-wrapper">
                         <h3>Apply Now</h3>
+                        <div class="step-indicator">
+                            <div class="progress-bar">
+                                <div class="progress" id="form-progress"></div>
+                            </div>
+                            <p class="step-text">Step <span id="current-step">1</span> of 3</p>
+                        </div>
+
                         <form name="job-application"
-                            method="POST"
-                            data-netlify="true"
-                            netlify-honeypot="bot-field"
-                            enctype="multipart/form-data"
-                            action="/thank-you/">
-
-                            <!-- Add these two hidden fields -->
+                              method="POST"
+                              data-netlify="true"
+                              netlify-honeypot="bot-field"
+                              enctype="multipart/form-data"
+                              action="/thank-you/">
+                            <!-- Required Netlify fields -->
                             <input type="hidden" name="form-name" value="job-application">
-
                             <input type="hidden" name="job-title" value="{{ title }}">
                             <div hidden><input name="bot-field"></div>
-                            <div class="form-group">
-                                <input type="text" name="name" placeholder="Your Name" required>
+
+                            <!-- Step 1: Personal Details -->
+                            <div class="form-step" id="step-1">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email Address" required>
+
+                            <!-- Step 2: Documents -->
+                            <div class="form-step" id="step-2" style="display: none;">
+                                <div class="form-group">
+                                    <label>Upload CV (PDF only)</label>
+                                    <input type="file" name="cv" id="cv" accept=".pdf" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="cover-letter" id="cover-letter" placeholder="Cover Letter" rows="4"></textarea>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone Number" required>
+
+                            <!-- Step 3: Preview -->
+                            <div class="form-step" id="step-3" style="display: none;">
+                                <h4>Review Your Application</h4>
+                                <div class="preview-section">
+                                    <div class="preview-item">
+                                        <strong>Name:</strong>
+                                        <span id="preview-name"></span>
+                                    </div>
+                                    <div class="preview-item">
+                                        <strong>Email:</strong>
+                                        <span id="preview-email"></span>
+                                    </div>
+                                    <div class="preview-item">
+                                        <strong>Phone:</strong>
+                                        <span id="preview-phone"></span>
+                                    </div>
+                                    <div class="preview-item">
+                                        <strong>CV File:</strong>
+                                        <span id="preview-cv"></span>
+                                    </div>
+                                    <div class="preview-item">
+                                        <strong>Cover Letter:</strong>
+                                        <p id="preview-cover-letter"></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Upload CV (PDF only)</label>
-                                <input type="file" name="cv" accept=".pdf" required>
+
+                            <div class="form-navigation">
+                                <button type="button" id="prev-btn" class="rts-btn btn-secondary" style="display: none;">Previous</button>
+                                <button type="button" id="next-btn" class="rts-btn btn-primary">Next</button>
+                                <button type="submit" id="submit-btn" class="rts-btn btn-primary" style="display: none;">Submit</button>
                             </div>
-                            <div class="form-group">
-                                <textarea name="cover-letter" placeholder="Cover Letter" rows="4"></textarea>
-                            </div>
-                            <button type="submit" class="rts-btn btn-primary">Submit Application</button>
                         </form>
                     </div>
                 </div>
@@ -82,3 +123,115 @@ section: careers
         </div>
     </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let currentStep = 1;
+  const totalSteps = 3;
+
+  function updateProgress() {
+    document.getElementById("form-progress").style.width =
+      `${(currentStep / totalSteps) * 100}%`;
+    document.getElementById("current-step").textContent = currentStep;
+  }
+
+  function showStep(step) {
+    // Hide all steps
+    document
+      .querySelectorAll(".form-step")
+      .forEach((el) => (el.style.display = "none"));
+    // Show current step
+    document.getElementById(`step-${step}`).style.display = "block";
+
+    // Update buttons
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+
+    prevBtn.style.display = step === 1 ? "none" : "block";
+    nextBtn.style.display = step === totalSteps ? "none" : "block";
+    submitBtn.style.display = step === totalSteps ? "block" : "none";
+
+    updateProgress();
+
+    if (step === 3) {
+      updatePreview();
+    }
+  }
+
+  function updatePreview() {
+    document.getElementById("preview-name").textContent =
+      document.getElementById("name").value;
+    document.getElementById("preview-email").textContent =
+      document.getElementById("email").value;
+    document.getElementById("preview-phone").textContent =
+      document.getElementById("phone").value;
+    document.getElementById("preview-cv").textContent =
+      document.getElementById("cv").files[0]?.name || "No file selected";
+    document.getElementById("preview-cover-letter").textContent =
+      document.getElementById("cover-letter").value ||
+      "No cover letter provided";
+  }
+
+  function validateCurrentStep() {
+    const currentStepEl = document.getElementById(`step-${currentStep}`);
+    const inputs = currentStepEl.querySelectorAll(
+      "input[required], textarea[required]",
+    );
+    let isValid = true;
+
+    inputs.forEach((input) => {
+      if (!input.value || (input.type === "email" && !input.validity.valid)) {
+        isValid = false;
+        input.classList.add("error");
+
+        // Remove existing error message if any
+        const existingError =
+          input.parentElement.querySelector(".error-message");
+        if (existingError) existingError.remove();
+
+        // Add error message
+        const errorMessage = document.createElement("div");
+        errorMessage.className = "error-message";
+        errorMessage.textContent =
+          input.type === "email"
+            ? "Please enter a valid email address"
+            : `${input.placeholder} is required`;
+        input.parentElement.appendChild(errorMessage);
+      } else {
+        input.classList.remove("error");
+        const existingError =
+          input.parentElement.querySelector(".error-message");
+        if (existingError) existingError.remove();
+      }
+    });
+
+    return isValid;
+  }
+
+  // Event Listeners
+  document.getElementById("next-btn").addEventListener("click", () => {
+    if (validateCurrentStep()) {
+      currentStep++;
+      showStep(currentStep);
+    }
+  });
+
+  document.getElementById("prev-btn").addEventListener("click", () => {
+    currentStep--;
+    showStep(currentStep);
+  });
+
+  // Clear errors on input
+  document.querySelectorAll("input, textarea").forEach((input) => {
+    input.addEventListener("input", () => {
+      input.classList.remove("error");
+      const existingError = input.parentElement.querySelector(".error-message");
+      if (existingError) existingError.remove();
+    });
+  });
+
+  // Initialize
+  showStep(1);
+});
+</script>
